@@ -1,0 +1,498 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Studeon Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+
+<!--//webfont-->
+<!--Animation-->
+<script src="js/wow.min.js"></script>
+<link href="css/animate.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<!--<script type="text/javascript"src="js/underscore-min.js"></script>-->
+<script type="text/javascript"src="js/lodash.min.js"></script>
+<script>
+
+    var array1 = [];
+
+
+$(document).ready(function() {
+    $("input:radio[name=r1]").click(function() {
+        array1.push($(this).val());
+    });
+
+
+	$("input:radio[name=r2]").click(function() {
+       array1.push($(this).val());
+    });
+
+
+	$("input:radio[name=r3]").click(function() {
+       array1.push($(this).val());
+    });
+
+
+	$("input:radio[name=r4]").click(function() {
+       array1.push($(this).val());
+    });
+
+
+
+	$("input:radio[name=r5]").click(function() {
+       array1.push($(this).val());
+    });
+
+
+	$("input:radio[name=r6]").click(function() {
+       array1.push($(this).val());
+    });
+
+
+	$("input:radio[name=r7]").click(function() {
+       array1.push($(this).val());
+    });
+
+	$("input:radio[name=r8]").click(function() {
+       array1.push($(this).val());
+    });
+
+	$("input:radio[name=r9]").click(function() {
+       array1.push($(this).val());
+    });
+
+	$("input:radio[name=r10]").click(function() {
+       array1.push($(this).val());
+    });
+
+    $("#hasil_button1").click(function() {
+
+
+
+		 var value1 = (_.chain(array1).countBy().pairs().max(_.last).head().value());
+		 var r1_box = document.getElementById('r1_box');
+         r1_box.style.display = (r1_box.style.display != 'none') ? 'visible' : '';
+
+		if (value1 == 'A') {
+            document.getElementById('hasil_r1').innerHTML = " Berarti kamu adalah seorang penindas sejati. Kamu paling senang jika ada orang yang bisa tunduk dan patuh kepada kamu..seorang rekan dan pesaing kamu bisnis bagi kamu adalah sama, kedua orang tersebut sama-sama menjadi penghalang bagi kamu untuk terlihat lebih menonjol. Tentu saja hal semacam ini harus kamu hindari,karena bagaimana pun juga, kamu membutuhkan mereka untuk bekerja sama. ";
+        };
+        if (value1 == 'B') {
+            document.getElementById('hasil_r1').innerHTML = " Berarti kamu adalah orang yang suka mendengarkan dari dua sisi.kamu bukan tipe orang yang asal mara, karena kamu selalu mendegarkan sebuah masalah dari dua sumber sekaligus.kamu sangat berhai-hati dalam bertindak.tidak mau terburu-buru, sehingga masalah akan semakin rumit dan tidak terselesaikan dengan baik. Sikap semacam ini memang terlihat baik, tetapi jika berlebihan bisa menjadi bumerang bagi kamu sendiri.sikap terlalu hati-hati akan membuat kamu lamban untuk maju. Kamu harus lebih percaya diri, katakan �ya� jika memang harus menyetujui,dan katakana �tidak�jika kamu memang tidak menyetujui.hal yang kamu harus lakukan adalah mengubah diri kamu agar semakin percaya diri dan tegas di hadapan teman atau saingan kamu.";
+        };
+        if (value1 == 'C') {
+            document.getElementById('hasil_r1').innerHTML = "Berarti kamu adalah seseorang yang mencintai perdamaian.kamu sangat bersahabat di tempat kerja,sehingga bagi kamu semua orang di sekitar  kamu adalah teman.hal tersebutlah yang membuat kamu terlihat berkarisma dan memiliki daya tarik yang sangat kuat .wajar saja bila pimpinan dan teman-teman kamu sangat menghargai kamu, baik itu sebagai teman ataupun lawan.";
+        };
+
+		array1 = [];
+
+    });
+
+
+
+});
+</script>
+<style>
+.button {
+  float:right;
+  padding: 1em 3em;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-appearance: none;
+  border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  background:#EC5844;
+  border:none;
+  outline:none;
+  box-shadow: inset 0px -2px 11px #AB0F0F;
+  -webkit-box-shadow: inset 0px -2px 11px #AB0F0F;
+  -o-box-shadow: inset 0px -2px 11px #AB0F0F;
+  -moz-box-shadow: inset 0px -2px 11px #AB0F0F;
+  }
+
+  .button:hover{
+	opacity: 0.8;
+}
+</style>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" charset="utf-8">
+  // Wait for Cordova to load
+  //
+  document.addEventListener("deviceready", onDeviceReady, false);
+
+  // Cordova is ready
+  //
+  function onDeviceReady() {
+
+  }
+
+  // Audio player
+  //
+  var my_media = null;
+  var mediaTimer = null;
+
+
+  // Play audio
+  //
+  function playAudio(src) {
+    // Create Media object from src
+    my_media = new Media(src, onSuccess, onError);
+
+    // Play audio
+    my_media.play();
+
+    // Update my_media position every second
+    if (mediaTimer == null) {
+      mediaTimer = setInterval(function() {
+        // get my_media position
+        my_media.getCurrentPosition(
+          // success callback
+          function(position) {
+            if (position > -1) {
+              setAudioPosition((position) + " sec");
+            }
+          },
+          // error callback
+          function(e) {
+            console.log("Error getting pos=" + e);
+            setAudioPosition("Error: " + e);
+          }
+        );
+      }, 1000);
+    }
+  }
+
+  // Pause audio
+  //
+  function pauseAudio() {
+    if (my_media) {
+      my_media.pause();
+    }
+  }
+
+  // Stop audio
+  //
+  function stopAudio() {
+    console.log("stop");
+    if (my_media) {
+      my_media.stop();
+    }
+    clearInterval(mediaTimer);
+    mediaTimer = null;
+  }
+
+  // onSuccess Callback
+  //
+  function onSuccess() {
+    console.log("playAudio():Audio Success");
+  }
+
+  // onError Callback
+  //
+  function onError(error) {
+    alert('code: ' + error.code + '\n' +
+      'message: ' + error.message + '\n');
+  }
+
+  // Set audio position
+  //
+  function setAudioPosition(position) {
+    document.getElementById('audio_position').innerHTML = position;
+  }
+</script>
+
+
+</head>
+
+<body onload="playAudio('/android_asset/www/audio/music.mp3');">
+	<div class="header box css3-shadow" id="head">
+ 	<div class="container">
+	  <div class="header-top">
+	        <div class="logo wow bounceInLeft" data-wow-delay="0.4s">
+				<a href="index.html"><img width="100" src="images/logo.png" alt=""/></a><br>
+			 </div>
+
+			<div class="clearfix"> </div>
+
+		  </div><!-- end header_main4 -->
+	</div>
+</div>
+
+	<!--start-services-->
+
+	<div id="about" class="service-section">
+    <div class="container">
+        <section>
+            <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <h3 style="font-weight: 300;padding: 0 0 0.5em"> Seberapa Keras Kamu Di Tempat Kerja </h3>
+                <p style="font-size:15px">Dalam hidup, seseorang harus bisa tegas di mana saja ia berada, termasuk ditempat kerja. Dengan bersikap tegas, kita akan mendapatkan cambuk semangat dari diri kita sendiri ataupun orang lain. Namun, tentu saja hal tersebut tidak boleh berlebihan, karena jika berlebihan, tentu saja kamu akan dicap sebagai si tukang siksa yang tegas dan galak di mata semua orang. Lalu, apakah kamu berpotensi untuk bersikap keras di tempat kerja?
+				</p><br><br>
+                <p style="font-size:15px">1.Bagaiman reaksi kamu ketika teman kerja satu tim kamu terlambat menyelesaikan pekerjaan sesuai degan batas waktu(deadline) yang telah disepakati bersama-sama?</p>
+                <ul>
+                    <li>
+                        <input name="r1" type="radio" value="A">
+                        <label>Langsung menghujaninya degan berbagai macam pertanyaan yang menyudutkan.</label>
+                    </li>
+                    <li>
+                        <input name="r1" type="radio" value="B">
+                        <label>Tidak perlu menambah masalah semakin runyam,yang penting tugas tersebut bisa diseleseikan.</label>
+                    </li>
+                    <li>
+                        <input name="r1" type="radio" value="C">
+                        <label>Mengkofirmasi terlebih dahuluapakah alas an yang membuatnya terlambat menyelesaikan tugasnya.</label>
+                    </li>
+                </ul>
+            </form>
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">2.Apakah yang akan kamu sampaikan kepada saingan bisnis kamu sehubungan dengan prestasi perusahaan tempat kamu bekerja ?</p>
+                <ul>
+                    <li>
+                        <input name="r2" type="radio" value="A">
+                        <label>''mundur saja deh ,omzet perusahaan saya pasti akan jauh lebih besar daripada tempat kamu bekerja'' .</label>
+                    </li>
+                    <li>
+                        <input name="r2" type="radio" value="B">
+                        <label> ''bersaing secara sehat yuk? Perusahaan siapa yang lebih maju,dialah yang terhebat''. </label>
+                    </li>
+                    <li>
+                        <input name="r2" type="radio" value="C">
+                        <label>''sejujurnya, perusahaan kamu adalah saingan terberat perusahaan saya''.</label>
+                    </li>
+                </ul>
+            </form>
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">3.Apa yang akan kamu lakukan ketika kamu di percaya untuk mengadakan kegiatan bersama beberapa teman kamu?</p>
+                <ul>
+                    <li>
+                        <input name="r3" type="radio" value="A">
+                        <label>melimpahkan tugas kepada teman-teman saja,lebih senang sebagai pemikir dari pada terjun langsung ke lapangan.</label>
+                    </li>
+                    <li>
+                        <input name="r3" type="radio" value="B">
+                        <label>membagi rata pekerjaan dan mendiskusikan berbagai macam agenda kegiatan.</label>
+                    </li>
+                    <li>
+                        <input name="r3" type="radio" value="C">
+                        <label>bekerja sendirian, kalau ada yang mau membantu diterima, tetapi tidak pernah mau mengharapkan bantuan dari teman-teman.</label>
+                    </li>
+                </ul>
+            </form>
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">4.apa reaksi kamu ketika ada karyawan baru yang dating denga pakaian kuno?</p>
+                <ul>
+                    <li>
+                        <input name="r4" type="radio" value="A">
+                        <label>langsung menertawakannya sambil berkata,''aduh,itu pakaian zaman tante gue''.</label>
+                    </li>
+                    <li>
+                        <input name="r4" type="radio" value="B">
+                        <label>mengambil fotonya dan di upload di sosial media,sambil menunggu komentar dari beberapa teman kamu.</label>
+                    </li>
+                    <li>
+                        <input name="r4" type="radio" value="C">
+                        <label>diam saja dan berharap dia sadar akan kesalahannya tersebut.</label>
+                    </li>
+                </ul>
+            </form>
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">5.seperti apakah reaksi kamu terhadap rekan kerja yang baru?</p>
+                <ul>
+                    <li>
+                        <input name="r5" type="radio" value="A">
+                        <label>diam saja,karena kamu merasa seorang senior dan pantang bagi kamu senioruntuk menegur juniornya.</label>
+                    </li>
+                    <li>
+                        <input name="r5" type="radio" value="B">
+                        <label>membantu ketika dia mengahadapi kesulitan.</label>
+                    </li>
+                    <li>
+                        <input name="r5" type="radio" value="C">
+                        <label>bersikap ramah dan hangat sperti sahabat.</label>
+                    </li>
+                </ul>
+            </form>
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">6.Bagaiman reaksi kamu ketika ada salah satu teman kamu yang tidak setuju degana ide sear kamu?</p>
+                <ul>
+                    <li>
+                        <input name="r6" type="radio" value="A">
+                        <label>tetap memaksakan ide kamu, karena kamu yakin bahwa ide kamu tersebut adalah yang paling bagus di antara ide-ide yang lain.</label>
+                    </li>
+                    <li>
+                        <input name="r6" type="radio" value="B">
+                        <label>mendegarkan pendapat rekan kam, dan menggabungkannya degan ide kamu.</label>
+                    </li>
+                    <li>
+                        <input name="r6" type="radio" value="C">
+                        <label>lebih baik mengalah daripada harus berdebat.</label>
+                    </li>
+                </ul>
+            </form>
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">7.pada suatu hari, ada salah saturekan kamu yang salah dalam input data, sehingga merugikan bagian kamu.bagaimanakah reaksi kamu saat itu?</p>
+                <ul>
+                    <li>
+                        <input name="r7" type="radio" value="A">
+                        <label>langsung menghubungi pimpinan agar teman kamutersebut mendapatkan peringatan.</label>
+                    </li>
+                    <li>
+                        <input name="r7" type="radio" value="B">
+                        <label>memberitahunya bahwa rekan kamu tersebut salah memasukkan data.</label>
+                    </li>
+                    <li>
+                        <input name="r7" type="radio" value="C">
+                        <label>diam saja dan yakin kalau kesalahan tersebut pasti akan terungkap.</label>
+                    </li>
+                </ul>
+            </form>
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">8.bagaiaman reaksi kamu ketika pimpinan memuji rekan kamu tersebut?</p>
+                <ul>
+                    <li>
+                        <input name="r8" type="radio" value="A">
+                        <label>''kebetulan saja,lagi pula bos tidak tahu kalau dia sering berbuat salah''.</label>
+                    </li>
+                    <li>
+                        <input name="r8" type="radio" value="B">
+                        <label>''dia memang hebat, pantaslah kalau bos memujinya''.</label>
+                    </li>
+                    <li>
+                        <input name="r8" type="radio" value="C">
+                        <label>''kemarin saya sudah dipuji,sekarang giliran dia.saya pikir,itu adalah hal yang wajar-wajar saja''.</label>
+                    </li>
+                </ul>
+            </form>
+
+			<form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">9.Bagaiman reaksi kamu ketika seseorang teman menegur kamu, karena kamu dianggap tidak bekerja sesuaidegan prosedur yang seharusnya?</p>
+                <ul>
+                    <li>
+                        <input name="r9" type="radio" value="A">
+                        <label>tetap yakin bahwa kamu sudah bekerja sesuai degan prosedur.</label>
+                    </li>
+                    <li>
+                        <input name="r9" type="radio" value="B">
+                        <label>bertanya dalam hati,''apakah saya benar-benar tidak bekerja sesuai degan prosedur?''.</label>
+                    </li>
+                    <li>
+                        <input name="r9" type="radio" value="C">
+                        <label>meminta maaf kepada rekan-rekan kamu.</label>
+                    </li>
+                </ul>
+            </form>
+
+
+			<form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">10.bagaimana reaksi kamu ketika diam-diam teman kamu membicarkan kamu?</p>
+                <ul>
+                    <li>
+                        <input name="r10" type="radio" value="A">
+                        <label>kamu semakin membencinya dan mengatakan, ''aduh dia tuh sok suci,kayak tidak pernah berbuat salah saja''.</label>
+                    </li>
+                    <li>
+                        <input name="r10" type="radio" value="B">
+                        <label>tetap cuek,toh kamu tida bekerja untuk teman kamu.</label>
+                    </li>
+                    <li>
+                        <input name="r10" type="radio" value="C">
+                        <label> menghampiri mereka dan pura-pura tidak tahu apa yang sedang mereka bicarakan.</label>
+                    </li>
+                </ul>
+            </form>
+
+
+			 <input class="button" type="button" id="hasil_button1" value="Hasil" />
+
+        </section>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+    </div>
+
+    <div style="display:none" id="r1_box" class="comments-main wow fadeInLeft animated" data-wow-delay="0.4s">
+
+        <div class="col-md-9">
+
+            <p id="hasil_r1">Belum ada hasil</p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+
+
+</div>
+		<!--//end-services-->
+
+			<!--start-smoth-scrolling-->
+			<script type="text/javascript" src="js/move-top.js"></script>
+			<script type="text/javascript" src="js/easing.js"></script>
+			<script type="text/javascript">
+								jQuery(document).ready(function($) {
+									$(".scroll").click(function(event){
+										event.preventDefault();
+										$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+									});
+								});
+								</script>
+							<!--start-smoth-scrolling-->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear'
+								 		};
+										*/
+
+										$().UItoTop({ easingType: 'easeOutQuart' });
+
+									});
+								</script>
+		<a href="#head" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+
+		<script src="js/svgcheckbx.js"></script>
+</body>
+</html>

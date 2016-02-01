@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Studeon Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+
+<!--//webfont-->
+<!--Animation-->
+<script src="js/wow.min.js"></script>
+<link href="css/animate.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<script type="text/javascript"src="js/underscore-min.js"></script>
+
+<script>
+	var value1 = '';
+	var value2 = '';
+	var value3 = ''; //tambahin setiap buat container
+	var value4 = '';
+	var value5 = '';
+	var value6 = '';
+	var value7 = '';
+	var value8 = '';
+	var value9 = '';
+	var value10 = '';
+$(document).ready(function() {
+
+
+
+    $("input:radio[name=r1]").click(function() {
+        value1 = $(this).val();
+
+        if (value1 == 'A') {
+            document.getElementById('hasil_r1').innerHTML = "kamu melihat diri kamu sebagai orang yang ramah dan bersikap baik";
+			$('#B1').hide();
+			$('#C1').hide();
+			$('#D1').hide();
+		};
+        if (value1 == 'B') {
+            document.getElementById('hasil_r1').innerHTML = "kamu suka kehidupan sosial dan selalu menghibur orang-orang disekitarmu.";
+			$('#A1').hide();
+			$('#C1').hide();
+			$('#D1').hide();
+		};
+
+        if (value1 == 'C') {
+            document.getElementById('hasil_r1').innerHTML = "kamu adalah orang yang cekatan, sangat berbakat dan kreatif.";
+			$('#A1').hide();
+			$('#B1').hide();
+			$('#D1').hide();
+		};
+        if (value1 == 'D') {
+            document.getElementById('hasil_r1').innerHTML = "kamu mempunyai kepercayaan diri yang tinggi dan senang menjadi pemimpin.";
+			$('#A1').hide();
+			$('#B1').hide();
+			$('#C1').hide();
+		};
+    });
+
+    $("#r1_button").click(function() {
+
+        var r1_box = document.getElementById('r1_box');
+        r1_box.style.display = (r1_box.style.display != 'none') ? 'visible' : '';
+    });
+
+
+
+
+    $("input:radio[name=r2]").click(function() {
+        value2 = $(this).val();
+
+        if (value2 == 'A') {
+            document.getElementById('hasil_r2').innerHTML = "kamu melihat diri kamu sebagai orang yang ramah dan bersikap baik";
+			$('#B2').hide();
+			$('#C2').hide();
+			$('#D2').hide();
+		};
+        if (value2 == 'B') {
+            document.getElementById('hasil_r2').innerHTML = "kamu suka kehidupan sosial dan selalu menghibur orang-orang disekitarmu.";
+			$('#A2').hide();
+			$('#C2').hide();
+			$('#D2').hide();
+		};
+
+        if (value2 == 'C') {
+            document.getElementById('hasil_r2').innerHTML = "kamu adalah orang yang cekatan, sangat berbakat dan kreatif.";
+			$('#A2').hide();
+			$('#B2').hide();
+			$('#D2').hide();
+		};
+        if (value2 == 'D') {
+            document.getElementById('hasil_r2').innerHTML = "kamu mempunyai kepercayaan diri yang tinggi dan senang menjadi pemimpin.";
+			$('#A2').hide();
+			$('#B2').hide();
+			$('#C2').hide();
+	   };
+    });
+
+    $("#r2_button").click(function() {
+
+        var r2_box = document.getElementById('r2_box');
+        r2_box.style.display = (r2_box.style.display != 'none') ? 'visible' : '';
+    });
+
+
+
+
+
+
+
+	  $("input:radio[name=r3]").click(function() {
+        value3 = $(this).val();
+
+        if (value3 == 'A') {
+            document.getElementById('hasil_r3').innerHTML = "Maka sifat anda seperti harimau. Sabar, pendiam, tidak berbahaya jika tidak lapar. Orang yang memiliki sifat harimau dapat dijadikan teman asalkan dituruti kehendaknya dan ia nantinya bisa membuat orang celaka jika sudah tidak senang lagi orang tersebut";
+			$('#B3').hide();
+			$('#C3').hide();
+			$('#D3').hide();
+	   };
+        if (value3 == 'B') {
+            document.getElementById('hasil_r3').innerHTML = "Maka sifat anda seperti ular dimana akal dan pikiran anda itu berbelit-belit, inginnya menguasai orang lain. Harap berhati-hati dengan orang yang punya sifat seperti ini.";
+			$('#A3').hide();
+			$('#C3').hide();
+			$('#D3').hide();
+	  };
+
+        if (value3 == 'C') {
+            document.getElementById('hasil_r3').innerHTML = "Maka sifat anda seperti lautan. Walaupun tampak lemah, air memiliki kekuatan yang luar biasa. Anda tidak mudah ditipu oleh orang dan menunjukan sifat anda yang berfikir jauh dalam memecahkan suatu persoalan. Keinginan anda akan dapat dicapai setelah melalui berbagai macam rintangan. beruntunglah anda jika memiliki teman yang memiliki sifat air karena hidupnya manfaat bagi orang lain.";
+			$('#A3').hide();
+			$('#B3').hide();
+			$('#D3').hide();
+	   };
+        if (value3 == 'D') {
+            document.getElementById('hasil_r3').innerHTML = "Maka sifat anda seperti lautan. Walaupun tampak lemah, air memiliki kekuatan yang luar biasa. Anda tidak mudah ditipu oleh orang dan menunjukan sifat anda yang berfikir jauh dalam memecahkan suatu persoalan. Keinginan anda akan dapat dicapai setelah melalui berbagai macam rintangan. beruntunglah anda jika memiliki teman yang memiliki sifat air karena hidupnya manfaat bagi orang lain.";
+			$('#A3').hide();
+			$('#B3').hide();
+			$('#C3').hide();
+	   };
+    });
+
+    $("#r3_button").click(function() {
+
+        var r3_box = document.getElementById('r3_box');
+        r3_box.style.display = (r3_box.style.display != 'none') ? 'visible' : '';
+    });
+
+
+
+	$("input:radio[name=r4]").click(function() {
+        value4 = $(this).val();
+
+        if (value4 == 'A') {
+            document.getElementById('hasil_r4').innerHTML = "Kamu sering dibilang pelit tapi tidak pernah punya masalah keuangan.";
+			$('#B4').hide();
+			$('#C4').hide();
+			$('#D4').hide();
+	   };
+        if (value4 == 'B') {
+            document.getElementById('hasil_r4').innerHTML = "Kamu adalah tipe businessman dan tahu cara mendapatkan uang dari apapun yang kamu inginkan.";
+			$('#A4').hide();
+			$('#C4').hide();
+			$('#D4').hide();
+	   };
+
+        if (value4 == 'C') {
+            document.getElementById('hasil_r4').innerHTML = "Kamu disiplin dalam mengeluarkan uang dan baik dalam menyimpan uang.";
+			$('#A4').hide();
+			$('#B4').hide();
+			$('#D4').hide();
+		};
+        if (value4 == 'D') {
+            document.getElementById('hasil_r4').innerHTML = "Kamu tidak tahu bagaimana mengatur uang dan selalu menggunakannya setiap ada.";
+			$('#A4').hide();
+			$('#B4').hide();
+			$('#C4').hide();
+	   };
+    });
+
+    $("#r4_button").click(function() {
+
+        var r4_box = document.getElementById('r4_box');
+        r4_box.style.display = (r4_box.style.display != 'none') ? 'visible' : '';
+    });
+
+
+
+
+
+		$("input:radio[name=r5]").click(function() {
+        value5 = $(this).val();
+
+        if (value5 == 'A') {
+            document.getElementById('hasil_r5').innerHTML = "Kamu sering dibilang pelit tapi tidak pernah punya masalah keuangan.";
+			$('#B5').hide();
+			$('#C5').hide();
+			$('#D5').hide();
+	   };
+        if (value5 == 'B') {
+            document.getElementById('hasil_r5').innerHTML = "Kamu adalah tipe businessman dan tahu cara mendapatkan uang dari apapun yang kamu inginkan.";
+			$('#A5').hide();
+			$('#C5').hide();
+			$('#D5').hide();
+	  };
+
+        if (value5 == 'C') {
+            document.getElementById('hasil_r5').innerHTML = "Kamu disiplin dalam mengeluarkan uang dan baik dalam menyimpan uang.";
+			$('#A5').hide();
+			$('#B5').hide();
+			$('#D5').hide();
+	   };
+        if (value5 == 'D') {
+            document.getElementById('hasil_r5').innerHTML = "Kamu tidak tahu bagaimana mengatur uang dan selalu menggunakannya setiap ada.";
+			$('#A5').hide();
+			$('#B5').hide();
+			$('#C5').hide();
+	   };
+    });
+
+    $("#r5_button").click(function() {
+
+        var r5_box = document.getElementById('r5_box');
+        r5_box.style.display = (r5_box.style.display != 'none') ? 'visible' : '';
+    });
+
+
+
+
+	$("input:radio[name=r6]").click(function() {
+        value6 = $(this).val();
+
+        if (value6 == 'A') {
+            document.getElementById('hasil_r6').innerHTML = "Anda cepat mengambil anggapan terburuk di setiap situasi. Sifat ini terlihat sebagai bukti yang jelas ketika ternyata benar-benar terjadi sesuatu. Anda tidak pernah bingung dalam menghadapi saat-saat genting, tetapi hanya terlalu sibuk karena panik. Jadi lain kali jika bencana datang, miliki pikiran jernih. Ingatlah selalu untuk terlebih dahulu mengambil napas panjang dan menghitung sampai sepuluh. Baru anda boleh pingsan.";
+			$('#B6').hide();
+			$('#C6').hide();
+			$('#D6').hide();
+		};
+        if (value6 == 'B') {
+            document.getElementById('hasil_r6').innerHTML = "Anda bukan tipe orang yang terhanyut dalam situasi genting. Sebaliknya, anda sangat santai, bahkan tidak memperhatikan situasi genting muncul. Kesalahan yang anda buat lebih banyak disebabkan kelalaian, bukannya maksud yang buruk. Tapi hasil akhirnya bagi anda (dan orang lain) adalah sama. ";
+			$('#A6').hide();
+			$('#C6').hide();
+			$('#D6').hide();
+	   };
+
+        if (value6 == 'C') {
+            document.getElementById('hasil_r6').innerHTML = "Anda mungkin nampak seperti orang yang santai. Tapi tidak pernah membiarkan diri lengah. Memiliki kesiagaan konstan seperti itulah yang membuat diri anda menjadi dewasa seperti sekarang. Tentu saja anda masih memiliki kelemahan yang bersifat manusiawi, hanya saja jangan memperlihatkannya ke seluruh dunia.";
+			$('#A6').hide();
+			$('#B6').hide();
+			$('#D6').hide();
+	   };
+
+    });
+
+    $("#r6_button").click(function() {
+
+        var r6_box = document.getElementById('r6_box');
+        r6_box.style.display = (r6_box.style.display != 'none') ? 'visible' : '';
+    });
+
+
+
+
+	$("input:radio[name=r7]").click(function() {
+        value7 = $(this).val();
+
+        if (value7 == 'A') {
+            document.getElementById('hasil_r7').innerHTML = "Kamu takut memulai hubungan dengan seseorang.";
+			$('#B7').hide();
+			$('#C7').hide();
+			$('#D7').hide();
+	   };
+        if (value7 == 'B') {
+            document.getElementById('hasil_r7').innerHTML = "Kamu tidak takut memiliki hubungan dengan seseorang yang disukai. ";
+			$('#A7').hide();
+			$('#C7').hide();
+			$('#D7').hide();
+	   };
+
+        if (value7 == 'C') {
+            document.getElementById('hasil_r7').innerHTML = "Kamu tidak mau mamiliki hubungan dengan siapapun, dan jika kamu mencoba membunuh ular itu, artinya kamu telah menemukan seseorang yang sudah menikah.";
+			$('#A7').hide();
+			$('#B7').hide();
+			$('#D7').hide();
+		};
+
+    });
+
+    $("#r7_button").click(function() {
+
+        var r7_box = document.getElementById('r7_box');
+        r7_box.style.display = (r7_box.style.display != 'none') ? 'visible' : '';
+    });
+
+
+
+	$("input:radio[name=r8]").click(function() {
+        value8 = $(this).val();
+
+        if (value8 == 'A') {
+            document.getElementById('hasil_r8').innerHTML = "Kamu menginginkan cinta bertegangan tinggi.";
+			$('#B8').hide();
+			$('#C8').hide();
+			$('#D8').hide();
+	   };
+        if (value8 == 'B') {
+            document.getElementById('hasil_r8').innerHTML = "Kamu percaya pentingya kejujuran dalam cinta.";
+			$('#A8').hide();
+			$('#C8').hide();
+			$('#D8').hide();
+	   };
+
+        if (value8 == 'C') {
+            document.getElementById('hasil_r8').innerHTML = " Kamu ingin kekasih Kamu menjadi sahabat.";
+			$('#A8').hide();
+			$('#B8').hide();
+			$('#D8').hide();
+	   };
+
+        if (value8 == 'D') {
+            document.getElementById('hasil_r8').innerHTML = " Kamu sedang mencari cinta sempurna. Ideal dan romantis.";
+			$('#A8').hide();
+			$('#B8').hide();
+			$('#C8').hide();
+		};
+    });
+
+    $("#r8_button").click(function() {
+
+        var r8_box = document.getElementById('r8_box');
+        r8_box.style.display = (r8_box.style.display != 'none') ? 'visible' : '';
+    });
+
+
+
+	$("input:radio[name=r9]").click(function() {
+        value9 = $(this).val();
+
+        if (value9 == 'A') {
+            document.getElementById('hasil_r9').innerHTML = "Kamu adalah tipe orang yang tahu ke mana setiap rupiah uang yang kamu gunakan. Bukan karena khawatir terhadap anggaran dan perencanaan keuangan, kamu hanya merasa lebih nyaman ketika kamu mengetahui dengan jelas posisi segala sesuatu. Kamu tidak suka kehilangan kendali.";
+			$('#B9').hide();
+			$('#C9').hide();
+			$('#D9').hide();
+	   };
+        if (value9 == 'B') {
+            document.getElementById('hasil_r9').innerHTML = "Uang membuat lubang dalam saku kamu. Jika memilikinya, kamu akan menggunakannya untuk membeli apapun yang menarik.";
+			$('#A9').hide();
+			$('#C9').hide();
+			$('#D9').hide();
+	   };
+
+        if (value9 == 'C') {
+            document.getElementById('hasil_r9').innerHTML = " Kamu berkata diri kamu ekonomis. Beberapa orang menyebutnya kikir. Kenyataannya kamu tidak menggunakan sumber daya dengan sembrono. Kamu lebih suka menyimpannya untuk keperluan di masa datang.";
+			$('#A9').hide();
+			$('#B9').hide();
+			$('#D9').hide();
+	   };
+
+        if (value9 == 'D') {
+            document.getElementById('hasil_r9').innerHTML = " Kamu terus menghabiskan uang sesuai dengan kebiasaan tanpa mempedulikan perubahan yang terjadi dalam hidup. Kamu terlalu bersikeras dengan pilihan kamu. Kamu tidak khawatir dengan nasib di masa depan.";
+			$('#A9').hide();
+			$('#B9').hide();
+			$('#C9').hide();
+	  };
+    });
+
+    $("#r9_button").click(function() {
+
+        var r9_box = document.getElementById('r9_box');
+        r9_box.style.display = (r9_box.style.display != 'none') ? 'visible' : '';
+    });
+
+
+
+	$("input:radio[name=r10]").click(function() {
+        value10 = $(this).val();
+
+        if (value10 == 'A') {
+            document.getElementById('hasil_r10').innerHTML = "Termasuk orang yang sering pesimis terhadap sesuatu, kamu percaya pada asumsi tentang keadaan buruk tidak akan menjadi normal, artinya situasi tertekan yang kamu alami sering menjadi kekhawatiran terus terjadi pada hidup kamu. Cobalah untuk berusaha percaya pada diri sendiri.";
+			$('#B10').hide();
+			$('#C10').hide();
+			$('#D10').hide();
+	   };
+        if (value10 == 'B') {
+            document.getElementById('hasil_r10').innerHTML = "Termasuk orang yang optimis, kamu percaya dengan asumsi hidup ini terkadang baik dan terkadang buruk, kamu termasuk orang yang merasa tidak ada gunanya jika melawan kenyataan. Dalam hidupmu kamu sering was-was dalam merencanakan masa depan.";
+			$('#A10').hide();
+			$('#C10').hide();
+			$('#D10').hide();
+	   };
+
+        if (value10 == 'C') {
+            document.getElementById('hasil_r10').innerHTML = " Termasuk orang yang tenang dan tegas dalam melakukan sesuatu, termasuk orang yang begitu marah jika melakukan sesuatu di bawah tekanan orang lain. Gampang resah namun tidak terburu- buru dalam mengambil keputusan.";
+			$('#A10').hide();
+			$('#B10').hide();
+			$('#D10').hide();
+	   };
+
+        if (value10 == 'D') {
+            document.getElementById('hasil_r10').innerHTML = " Termasuk orang yang pemberani, hanya sedikit dalam memegang rasa takut, tidak ingin bahkan begitu membenci sesuatu hal yang dilakukan atau pekerjaannya berada dalam tekanan orang lain. Selalu berospek tinggi jika berbicara tentang masa depan.";
+			$('#A10').hide();
+			$('#B10').hide();
+			$('#C10').hide();
+	   };
+    });
+
+    $("#r10_button").click(function() {
+
+        var r10_box = document.getElementById('r10_box');
+        r10_box.style.display = (r10_box.style.display != 'none') ? 'visible' : '';
+    });
+
+});
+</script>
+
+
+
+
+
+<style>
+.button {
+  float:right;
+  padding: 1em 3em;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-appearance: none;
+  border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  background:#EC5844;
+  border:none;
+  outline:none;
+  box-shadow: inset 0px -2px 11px #AB0F0F;
+  -webkit-box-shadow: inset 0px -2px 11px #AB0F0F;
+  -o-box-shadow: inset 0px -2px 11px #AB0F0F;
+  -moz-box-shadow: inset 0px -2px 11px #AB0F0F;
+  }
+
+  .button:hover{
+	opacity: 0.8;
+}
+</style>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" charset="utf-8">
+	// Wait for Cordova to load
+	//
+	document.addEventListener("deviceready", onDeviceReady, false);
+
+	// Cordova is ready
+	//
+	function onDeviceReady() {
+
+	}
+
+	// Audio player
+	//
+	var my_media = null;
+	var mediaTimer = null;
+
+
+	// Play audio
+	//
+	function playAudio(src) {
+		// Create Media object from src
+		my_media = new Media(src, onSuccess, onError);
+
+		// Play audio
+		my_media.play();
+
+		// Update my_media position every second
+		if (mediaTimer == null) {
+			mediaTimer = setInterval(function() {
+				// get my_media position
+				my_media.getCurrentPosition(
+					// success callback
+					function(position) {
+						if (position > -1) {
+							setAudioPosition((position) + " sec");
+						}
+					},
+					// error callback
+					function(e) {
+						console.log("Error getting pos=" + e);
+						setAudioPosition("Error: " + e);
+					}
+				);
+			}, 1000);
+		}
+	}
+
+	// Pause audio
+	//
+	function pauseAudio() {
+		if (my_media) {
+			my_media.pause();
+		}
+	}
+
+	// Stop audio
+	//
+	function stopAudio() {
+		console.log("stop");
+		if (my_media) {
+			my_media.stop();
+		}
+		clearInterval(mediaTimer);
+		mediaTimer = null;
+	}
+
+	// onSuccess Callback
+	//
+	function onSuccess() {
+		console.log("playAudio():Audio Success");
+	}
+
+	// onError Callback
+	//
+	function onError(error) {
+		alert('code: ' + error.code + '\n' +
+			'message: ' + error.message + '\n');
+	}
+
+	// Set audio position
+	//
+	function setAudioPosition(position) {
+		document.getElementById('audio_position').innerHTML = position;
+	}
+</script>
+
+
+</head>
+
+<body onload="playAudio('/android_asset/www/audio/music.mp3');">
+	<div class="header box css3-shadow" id="head">
+ 	<div class="container">
+	  <div class="header-top">
+	        <div class="logo wow bounceInLeft" data-wow-delay="0.4s">
+				<a href="index.html"><img width="100" src="images/logo.png" alt=""/></a><br>
+			 </div>
+
+			<div class="clearfix"> </div>
+
+		  </div><!-- end header_main4 -->
+	</div>
+</div>
+
+	<!--start-services-->
+
+	<div id="about" class="service-section">
+
+
+
+
+
+    <div class="container">
+        <section>
+            <form class="ac-custom ac-radio ac-fill" autocomplete="off"><br>
+                <p style="font-weight: bold;font-size:15px;padding: 0 0 0.5em">TES KOKOLOGI COVER ALBUM</p>
+                <br>
+                <p style="font-size:15px">Kamu adalah seorang superstars yang akan merilis album baru. Apa yang ingin kamu tampilkan sebagai cover?</p>
+                <ul>
+                    <li>
+                        <input name="r1" type="radio" value="A" id="A1">
+                        <label>Pemandangan indah</label>
+                    </li>
+                    <li>
+                        <input name="r1" type="radio" value="B" id="B1">
+                        <label>Gambar kartun</label>
+                    </li>
+                    <li>
+                        <input name="r1" type="radio" value="C" id="C1">
+                        <label>Gambar abstrak, sesuatu yang artistik</label>
+                    </li>
+                    <li>
+                        <input name="r1" type="radio" value="D" id="D1">
+                        <label>Gambar kamu sendiri</label>
+                    </li>
+                </ul>
+                <input class="button" type="button" id="r1_button" value="Hasil" />
+
+            </form>
+
+
+        </section>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+    </div>
+
+    <div style="display:none" id="r1_box" class="comments-main wow fadeInLeft animated" data-wow-delay="0.4s">
+
+        <div class="col-md-9">
+            <b>Pertanyaan ini memberi petunjuk apa yang kamu lihat sebagai sikap yang paling mempesona dari diri kamu dan ingin kamu tunjukkan ke orang lain. Jika sudah dijawab, berikut penjelasannya.</b>
+            <br/>
+            <br/>
+            <p id="hasil_r1">Belum ada hasil</p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+	<div class="container">
+        <section>
+            <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <p style="font-weight: bold;font-size:15px;padding: 0 0 0.5em;">TES KOKOLOGI SEORANG TEKHNISI</p>
+                <br>
+                <p style="font-size:15px">Kamu sedang membaca di ruang tengah saat seseorang mengetuk pintu rumah. Lewat mata kucing, kamu melihat orang yang tak dikenal. Melihat pakaiannya, orang itu adalah seorang teknisi. Teknisi apa orang itu..??</p>
+                <ul>
+                    <li>
+                        <input name="r2" type="radio" value="A" id="A2">
+                        <label>Listrik</label>
+                    </li>
+                    <li>
+                        <input name="r2" type="radio" value="B" id="B2">
+                        <label>Ledeng</label>
+                    </li>
+                    <li>
+                        <input name="r2" type="radio" value="C" id="C2">
+                        <label>Pendigin ruangan (ac)</label>
+                    </li>
+                    <li>
+                        <input name="r2" type="radio" value="D" id="D2">
+                        <label>televisi atau stereo</label>
+                    </li>
+                </ul>
+                <input class="button" type="button" id="r2_button" value="Hasil" />
+
+            </form>
+
+
+        </section>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+    </div>
+
+    <div style="display:none" id="r2_box" class="comments-main wow fadeInLeft animated" data-wow-delay="0.4s">
+
+        <div class="col-md-9">
+            <b>Pertanyaan ini memberi petunjuk apa yang kamu lihat sebagai sikap yang paling mempesona dari diri kamu dan ingin kamu tunjukkan ke orang lain. Jika sudah dijawab, berikut penjelasannya.</b>
+            <br/>
+            <br/>
+            <p id="hasil_r2">Belum ada hasil</p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+
+
+
+
+    <div class="container">
+        <section>
+            <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <p style="font-weight: bold;font-size:15px;padding: 0 0 0.5em;">TES MEMILIH JALAN</p>
+                <br>
+                <p style="font-size:15px">Umpamanya anda berdiri di tengah-tengah perempatan jalan dan berencana melanjutkan perjalanan. Ketika anda melihat ke barat, ada seekor harimau yang siap menerkam anda jika berani melalui jalan itu.
+Lalu anda melihat ke timur, dijalan itu nampak seekor ular besar yang siap memangsa anda jika berani melewati jalan ituLalu anda melihat ke arah lain yaitu utara. Disitu terdapat lautan besar yang harus anda lewati tanpa perahu/kapal.
+Lalu anda melihat ke arah selatan, ternyata ada api besar berkobar-kobar amat tingginya . <br> <br>
+Kemanakah anda akan memilih arah perjalanan yang semuanya berbahaya? sedangkan berdiam diri tidak akan mungkin karena bisa mati kelaparan. Nah cobalah anda pikir dalam-dalam jalan manakah yang menurut anda harus dilalui? dari pilihan arah itulah maka watak/karakter anda akan terbaca
+??</p>
+                <ul>
+                    <li>
+                        <input name="r3" type="radio" value="A" id="A3">
+                        <label>Jika anda memilih jalan yang ada harimaunya</label>
+                    </li>
+                    <li>
+                        <input name="r3" type="radio" value="B" id="B3">
+                        <label>Jika anda memilih jalan yang ada ularnya</label>
+                    </li>
+                    <li>
+                        <input name="r3" type="radio" value="C" id="C3">
+                        <label>Jika anda memilih jalan yang terdapat lautan besar</label>
+                    </li>
+                    <li>
+                        <input name="r3" type="radio" value="D" id="D3">
+                        <label>Jika anda memilih jalan yang ada api berkobar-kobar</label>
+                    </li>
+                </ul>
+                <input class="button" type="button" id="r3_button" value="Hasil" />
+            </form>
+
+
+        </section>
+
+
+    </div>
+
+    <div style="display:none" id="r3_box" class="comments-main wow fadeInLeft animated" data-wow-delay="0.4s">
+
+        <div class="col-md-9">
+
+            <p id="hasil_r3">Belum ada hasil</p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+	 <br>
+
+	<!--batas 1-->
+
+
+
+	 <div class="container">
+        <section>
+            <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <p style="font-weight: bold;font-size:15px;padding: 0 0 0.5em;">TES KOKOLOGI BUNUH DIRI</p>
+                <br>
+                <p style="font-size:15px">Jika kamu harus bunuh diri, cara apa yang kamu pilih..??</p>
+                <ul>
+                    <li>
+                        <input name="r4" type="radio" value="A" id="A4">
+                        <label>Menembak diri sendiri</label>
+                    </li>
+                    <li>
+                        <input name="r4" type="radio" value="B" id="B4">
+                        <label>Minum obat yang banyak</label>
+                    </li>
+                    <li>
+                        <input name="r4" type="radio" value="C" id="C4">
+                        <label>Gantung diri.</label>
+                    </li>
+                    <li>
+                        <input name="r4" type="radio" value="D" id="D4">
+                        <label>Lompat dari gedung.</label>
+                    </li>
+                </ul>
+                <input class="button" type="button" id="r4_button" value="Hasil" />
+            </form>
+
+
+        </section>
+
+
+
+
+
+    </div>
+
+    <div style="display:none" id="r4_box" class="comments-main wow fadeInLeft animated" data-wow-delay="0.4s">
+
+        <div class="col-md-9">
+            <b>Petanyaan ini memberi petunjuk bagaimana kamu mengatur uang. Jika sudah dijawab, berikut penjelasannya.</b>
+            <br/>
+            <br/>
+            <p id="hasil_r4">Belum ada hasil</p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+	 <br>
+	<div class="container">
+        <section>
+            <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <p style="font-weight: bold;font-size:15px;padding: 0 0 0.5em;">TES KOKOLOGI TEMPAT SAMPAH</p>
+                <br>
+                <p style="font-size:15px">Kamu sedang jalan-jalan dan secara tidak sengaja menendang tempat sampah sampai jatuh berantakan. Apa yang kira-kira kamu lihat..??</p>
+                <ul>
+                    <li>
+                        <input name="r5" type="radio" value="A" id="A5">
+                        <label>Nggak ada, tempat sampahnya kosong.</label>
+                    </li>
+                    <li>
+                        <input name="r5" type="radio" value="B" id="B5">
+                        <label>Cuma sampah yang menyebar di jalanan.</label>
+                    </li>
+                    <li>
+                        <input name="r5" type="radio" value="C" id="C5">
+                        <label>Hampir semuanya makanan.</label>
+                    </li>
+                    <li>
+                        <input name="r5" type="radio" value="D" id="D5">
+                        <label>Semua sampah sudah dimasukkan ke sebuah kantong dengan rapi.</label>
+                    </li>
+                </ul>
+                <input class="button" type="button" id="r5_button" value="Hasil" />
+            </form>
+
+
+        </section>
+
+
+    </div>
+
+    <div style="display:none" id="r5_box" class="comments-main wow fadeInLeft animated" data-wow-delay="0.4s">
+
+        <div class="col-md-9">
+            <b>Pertanyaan ini memberi petunjuk apa yang kamu sembunyikan dari orang lain. Jika sudah dijawab, berikut penjelasannya.</b>
+            <br/>
+            <br/>
+            <p id="hasil_r5">Belum ada hasil</p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+	 <br>
+	<div class="container">
+        <section>
+            <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <p style="font-weight: bold;font-size:15px;padding: 0 0 0.5em;">TES KOKOLOGI PINTU RUMAH</p>
+                <br>
+                <p style="font-size:15px">Bayangkan diri anda sedang berjalan menyusuri kota. Hari itu sangat indah. Anda sedang berangan-angan. Anda berbelok ke arah jalan yang tidak pernah dilewati sebelumnya. Selagi berjalan, anda melewati rumah yang indah di seberang jalan. Anda berhenti sejenak untuk mengagumi rumah yang indah itu dan memperhatikan pintunya terbuka setengah. Mengapa pintu itu sedikit terbuka?</p>
+                <ul>
+                    <li>
+                        <input name="r6" type="radio" value="A" id="A6">
+                        <label>Rumah itu dirampok</label>
+                    </li>
+                    <li>
+                        <input name="r6" type="radio" value="B" id="B6">
+                        <label>Pemiliknya lupa mengunci</label>
+                    </li>
+                    <li>
+                        <input name="r6" type="radio" value="C" id="C6">
+                        <label>Pemiliknya berada di dalam</label>
+                    </li>
+
+                </ul>
+                <input class="button" type="button" id="r6_button" value="Hasil" />
+
+            </form>
+
+
+        </section>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+    </div>
+
+    <div style="display:none" id="r6_box" class="comments-main wow fadeInLeft animated" data-wow-delay="0.4s">
+
+        <div class="col-md-9">
+            <b>Dalam alam bawah sadar, alasan mengapa membayangkan pintu terbuka berhubungan dengan cara membuka diri dan menyingkap kelemahan anda terhadap orang lain. </b>
+            <br/>
+            <br/>
+            <p id="hasil_r6">Belum ada hasil</p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+		<div class="container">
+        <section>
+            <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <p style="font-weight: bold;font-size:15px;padding: 0 0 0.5em;">TES KOKOLOGI SEEKOR ULAR</p>
+                <br>
+                <p style="font-size:15px">Kamu sedang nonton TV di ruang tengah dan karena sudah larut, kamu memutuskan untuk tidur. Saat masuk ke kamar, kamu melihat seekor ular di kasur empukmu. Apa yang akan kamu lakukan..??</p>
+                <ul>
+                    <li>
+                        <input name="r7" type="radio" value="A" id="A7">
+                        <label>Lari.</label>
+                    </li>
+                    <li>
+                        <input name="r7" type="radio" value="B" id="B7">
+                        <label>Agak kaget tapi nggak terlalu takut. Kamu nggak tau harus ngapain.</label>
+                    </li>
+                    <li>
+                        <input name="r7" type="radio" value="C" id="C7">
+                        <label>Agak kaget tapi nggak terlalu takut, kamu lalu memikirkan cara mengeluarkan ular itu.</label>
+                    </li>
+                </ul>
+                <input class="button" type="button" id="r7_button" value="Hasil" />
+
+            </form>
+
+
+        </section>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+    </div>
+
+    <div style="display:none" id="r7_box" class="comments-main wow fadeInLeft animated" data-wow-delay="0.4s">
+
+        <div class="col-md-9">
+            <b>Pertanyaan ini memberi petunjuk cara pandang kamu ke arah hubungan dengan kekasih. </b>
+            <br/>
+            <br/>
+            <p id="hasil_r7">Belum ada hasil</p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+
+	<div class="container">
+        <section>
+            <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <p style="font-weight: bold;font-size:15px;padding: 0 0 0.5em;">TES KOKOLOGI HOTEL BINTANG 5</p>
+                <br>
+                <p style="font-size:15px">Kamu sedang ada di hotel bintang 5 dengan pemandangan langit biru. Kamu tertidur dan tidur siang selama dua jam. Apa yang ingin kamu lihat di luar jendela setelah bangun..??</p>
+                <ul>
+                    <li>
+                        <input name="r8" type="radio" value="A" id="A8">
+                        <label> Cahaya matahari di tengah hari di atas laut biru.</label>
+                    </li>
+                    <li>
+                        <input name="r8" type="radio" value="B" id="B8">
+                        <label>Laut bitu gelap yang memantulkan bintang di langit.</label>
+                    </li>
+                    <li>
+                        <input name="r8" type="radio" value="C" id="C8">
+                        <label>Laut biru dingin yang sedikit terlihat di antara kabut.</label>
+                    </li>
+					<li>
+                        <input name="r8" type="radio" value="D" id="D8">
+                        <label>Matahari yang sedang tenggelam dimana langit dan laut bertemu.</label>
+                    </li>
+                </ul>
+                <input class="button" type="button" id="r8_button" value="Hasil" />
+
+            </form>
+
+
+        </section>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+    </div>
+
+    <div style="display:none" id="r8_box" class="comments-main wow fadeInLeft animated" data-wow-delay="0.4s">
+
+        <div class="col-md-9">
+            <b>Pertanyaan ini memberi petunjuk apa yang kamu inginkan dari cinta. </b>
+            <br/>
+            <br/>
+            <p id="hasil_r8">Belum ada hasil</p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+	<div class="container">
+        <section>
+            <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <p style="font-weight: bold;font-size:15px;padding: 0 0 0.5em;">TES KOKOLOGI MEMBACA MAJALAH</p>
+                <br>
+                <p style="font-size:15px">Kamu baru saja membeli majalah mingguan populer dan membawanya pulang untuk dibaca, Bagaimana cara kamu membaca isi majalah tersebut?</p>
+                <ul>
+                    <li>
+                        <input name="r9" type="radio" value="A" id="A9">
+                        <label> Membaca seluruh majalah secara urut dari awal sampai akhir.</label>
+                    </li>
+                    <li>
+                        <input name="r9" type="radio" value="B" id="B9">
+                        <label>Langsung membaca artikel yang menarik dan hanya membaca itu.</label>
+                    </li>
+                    <li>
+                        <input name="r9" type="radio" value="C" id="C9">
+                        <label>Membuka secara acak dan membaca apa saja yang menarik.</label>
+                    </li>
+					<li>
+                        <input name="r9" type="radio" value="D" id="D9">
+                        <label>Membaca majalah dengan urutan yang selalu sama.</label>
+                    </li>
+                </ul>
+                <input class="button" type="button" id="r9_button" value="Hasil" />
+
+            </form>
+
+
+        </section>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+    </div>
+
+    <div style="display:none" id="r9_box" class="comments-main wow fadeInLeft animated" data-wow-delay="0.4s">
+
+        <div class="col-md-9">
+            <b>Majalah mingguan mewakili kumpulan usaha dari banyak penulis besar, desainer, fotografer dan editor yang menawarkan bermacam-macam pendapat dan sudut pandang. Majalah adalah kumpulan pengalaman manusia. Cara kamu membaca majalah menunjukkan bagaimana kamu menghadapi keragaman pilihan. Khususnya, cara merencanakan waktu membaca menunjukkan pendekatan kamu dalam mengurus sumber daya, terutama uang. </b>
+            <br/>
+            <br/>
+            <p id="hasil_r9">Belum ada hasil</p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+	<div class="container">
+        <section>
+            <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <p style="font-weight: bold;font-size:15px;padding: 0 0 0.5em;">TES KOKOLOGI ANALOGI BURUNG MERPATI</p>
+                <br>
+                <p style="font-size:15px">Suatu hari seekor burung merpati tanpa sengaja masuk ke kamar kamu--dia terperangkap, akhirnya kamu berniat memelihara burung tersebut.
+										  Pada hari yang ke-5 burung itu berubah warna menjadi warna kuning, yang awalnya adalah hitam.</br> <br>
+										 Namun ketika beberapa hari kamu memeliharanya, ada hal aneh yang terjadi.</br> <br>
+										  Di hari yang ke-6 burung itu berubah kembali namun menjadi warna merah.</br> <br>
+										  Di hari ke-7 pun masih saja burung itu berubah warna yaitu menjadi warna hitam.Nah menurut analisa kamu.</br> <br>
+										 di hari ke-8 burung itu akan berubah warna menjadi warna apa?</br></p>
+
+			   <ul>
+                    <li>
+                        <input name="r10" type="radio" value="A" id="A10">
+                        <label> Tetap hitam</label>
+                    </li>
+                    <li>
+                        <input name="r10" type="radio" value="B" id="B10">
+                        <label>Warna biru</label>
+                    </li>
+                    <li>
+                        <input name="r10" type="radio" value="C" id="C10">
+                        <label>Warna putih</label>
+                    </li>
+					<li>
+                        <input name="r10" type="radio" value="D" id="D10">
+                        <label>Warna emas</label>
+                    </li>
+                </ul>
+                <input class="button" type="button" id="r10_button" value="Hasil" />
+
+            </form>
+
+
+        </section>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+    </div>
+
+    <div style="display:none" id="r10_box" class="comments-main wow fadeInLeft animated" data-wow-delay="0.4s">
+
+        <div class="col-md-9">
+            <b>Menganalisa kepribadian manusia dari warna burung yang dipresentasikan dalam bentuk soal cerita. </b>
+            <br/>
+            <br/>
+            <p id="hasil_r10">Belum ada hasil</p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+
+</div>
+		<!--//end-services-->
+
+
+			<!--start-smoth-scrolling-->
+			<script type="text/javascript" src="js/move-top.js"></script>
+			<script type="text/javascript" src="js/easing.js"></script>
+			<script type="text/javascript">
+								jQuery(document).ready(function($) {
+									$(".scroll").click(function(event){
+										event.preventDefault();
+										$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+									});
+								});
+								</script>
+							<!--start-smoth-scrolling-->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear'
+								 		};
+										*/
+
+										$().UItoTop({ easingType: 'easeOutQuart' });
+
+									});
+								</script>
+		<a href="#head" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+
+		<script src="js/svgcheckbx.js"></script>
+</body>
+</html>

@@ -1,0 +1,525 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Studeon Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+
+<!--//webfont-->
+<!--Animation-->
+<script src="js/wow.min.js"></script>
+<link href="css/animate.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<!--<script type="text/javascript"src="js/underscore-min.js"></script>-->
+<script type="text/javascript"src="js/lodash.min.js"></script>
+<script>
+
+    var array1 = [];
+
+
+$(document).ready(function() {
+    $("input:radio[name=r1]").click(function() {
+        array1.push($(this).val());
+    });
+
+
+	$("input:radio[name=r2]").click(function() {
+       array1.push($(this).val());
+    });
+
+
+	$("input:radio[name=r3]").click(function() {
+       array1.push($(this).val());
+    });
+
+
+	$("input:radio[name=r4]").click(function() {
+       array1.push($(this).val());
+    });
+
+
+
+	$("input:radio[name=r5]").click(function() {
+       array1.push($(this).val());
+    });
+
+
+	$("input:radio[name=r6]").click(function() {
+       array1.push($(this).val());
+    });
+
+
+	$("input:radio[name=r7]").click(function() {
+       array1.push($(this).val());
+    });
+
+	$("input:radio[name=r8]").click(function() {
+       array1.push($(this).val());
+    });
+
+	$("input:radio[name=r9]").click(function() {
+       array1.push($(this).val());
+    });
+
+	$("input:radio[name=r10]").click(function() {
+       array1.push($(this).val());
+    });
+
+	$("input:radio[name=r11]").click(function() {
+       array1.push($(this).val());
+    });
+
+
+	$("input:radio[name=r12]").click(function() {
+       array1.push($(this).val());
+    });
+
+
+	$("input:radio[name=r13]").click(function() {
+       array1.push($(this).val());
+    });
+
+    $("#hasil_button1").click(function() {
+
+
+
+		 var value1 = (_.chain(array1).countBy().pairs().max(_.last).head().value());
+		 var r1_box = document.getElementById('r1_box');
+         r1_box.style.display = (r1_box.style.display != 'none') ? 'visible' : '';
+
+		if (value1 == 'A') {
+            document.getElementById('hasil_r1').innerHTML = " Berarti menggambarkan bahwa kamu bukanlah orang yang suka mengatur. Kamu lebih sering memerhatikan diri kamu sendiri daripada orang lain. ";
+        };
+        if (value1 == 'B') {
+            document.getElementById('hasil_r1').innerHTML = " Berarti menggambarkan bahwa kamu punya bakat sebagai seseorang yang suka mengatur. Kamu tidak pernah bisa membuang kesempatan yang ada untuk berlatih sebagai seseorang pemimpin. Kamu selalu yakin bahwa apa yang kamu piker adalah yang paling benar dan yang paling baik di antara yang lain.";
+        };
+
+		array1 = [];
+
+    });
+
+
+
+});
+</script>
+<style>
+.button {
+  float:right;
+  padding: 1em 3em;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-appearance: none;
+  border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  background:#EC5844;
+  border:none;
+  outline:none;
+  box-shadow: inset 0px -2px 11px #AB0F0F;
+  -webkit-box-shadow: inset 0px -2px 11px #AB0F0F;
+  -o-box-shadow: inset 0px -2px 11px #AB0F0F;
+  -moz-box-shadow: inset 0px -2px 11px #AB0F0F;
+  }
+
+  .button:hover{
+	opacity: 0.8;
+}
+</style>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" charset="utf-8">
+  // Wait for Cordova to load
+  //
+  document.addEventListener("deviceready", onDeviceReady, false);
+
+  // Cordova is ready
+  //
+  function onDeviceReady() {
+
+  }
+
+  // Audio player
+  //
+  var my_media = null;
+  var mediaTimer = null;
+
+
+  // Play audio
+  //
+  function playAudio(src) {
+    // Create Media object from src
+    my_media = new Media(src, onSuccess, onError);
+
+    // Play audio
+    my_media.play();
+
+    // Update my_media position every second
+    if (mediaTimer == null) {
+      mediaTimer = setInterval(function() {
+        // get my_media position
+        my_media.getCurrentPosition(
+          // success callback
+          function(position) {
+            if (position > -1) {
+              setAudioPosition((position) + " sec");
+            }
+          },
+          // error callback
+          function(e) {
+            console.log("Error getting pos=" + e);
+            setAudioPosition("Error: " + e);
+          }
+        );
+      }, 1000);
+    }
+  }
+
+  // Pause audio
+  //
+  function pauseAudio() {
+    if (my_media) {
+      my_media.pause();
+    }
+  }
+
+  // Stop audio
+  //
+  function stopAudio() {
+    console.log("stop");
+    if (my_media) {
+      my_media.stop();
+    }
+    clearInterval(mediaTimer);
+    mediaTimer = null;
+  }
+
+  // onSuccess Callback
+  //
+  function onSuccess() {
+    console.log("playAudio():Audio Success");
+  }
+
+  // onError Callback
+  //
+  function onError(error) {
+    alert('code: ' + error.code + '\n' +
+      'message: ' + error.message + '\n');
+  }
+
+  // Set audio position
+  //
+  function setAudioPosition(position) {
+    document.getElementById('audio_position').innerHTML = position;
+  }
+</script>
+
+
+</head>
+
+<body onload="playAudio('/android_asset/www/audio/music.mp3');">
+	<div class="header box css3-shadow" id="head"">
+ 	<div class="container">
+	  <div class="header-top">
+	        <div class="logo wow bounceInLeft" data-wow-delay="0.4s">
+				<a href="index.html"><img width="100" src="images/logo.png" alt=""/></a><br>
+			 </div>
+
+			<div class="clearfix"> </div>
+
+		  </div><!-- end header_main4 -->
+	</div>
+</div>
+
+	<!--start-services-->
+
+	<div id="about" class="service-section">
+    <div class="container">
+        <section>
+            <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <h3 style="font-weight: 300;padding: 0 0 0.5em"> Apakah Kamu Suka Mengatur</h3>
+				<p style="font-size:15px">Sikap mengatur atau yang sering disebut dengan Bossy (gaya seperti bos) memang bisa memberikan dua dampak sekaligus. Adakalanya sikap semacam itu bisa menimbulkan meindset bahwa kelak jika kamu sudah menjadi bos, minimal kamu harus bisa mengatur anak buah kamu. Namun, ada dampak buruknya juga bayak yang kurang menyukai sikap semacam itu.</p><br><br>
+                <p style="font-size:15px">Setiap orang pasti memiliki privasi masing-masing. Mereka bukan layang-layang yang selalu bisa kita arahkan sesuka hati kita. Mereka pasti memiliki hak untuk memerhatikan diri mereka sendiri dan sebagainya. Lalu, apakah kamu termasuk orang yang suka mengatur? Untuk mengetahuinya, kamu bisa memilih S untuk menyalahkan pernyataan atau B untuk membenarkan pernyataan jika sesuai dengan diri kamu sendiri</p>
+				<br><br>
+                <p style="font-size:15px">1.Saya sering mengomentari tentang gaya pakaian orang lain?</p>
+                <ul>
+                    <li>
+                        <input name="r1" type="radio" value="A">
+                        <label>Salah.</label>
+                    </li>
+                    <li>
+                        <input name="r1" type="radio" value="B">
+                        <label>Benar.</label>
+                    </li>
+
+                </ul>
+            </form>
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">2.Saya berhak memberi keputusan tentang diri saya dan orang lain?</p>
+                <ul>
+                    <li>
+                        <input name="r2" type="radio" value="A">
+                        <label>Salah.</label>
+                    </li>
+                    <li>
+                        <input name="r2" type="radio" value="B">
+                        <label> Benar. </label>
+                    </li>
+
+                </ul>
+            </form>
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">3.saya memiliki kebiasaan buruk  yaitu, meminta orang menunggu saya berganti pakaian?</p>
+                <ul>
+                    <li>
+                        <input name="r3" type="radio" value="A">
+                        <label>Salah.</label>
+                    </li>
+                    <li>
+                        <input name="r3" type="radio" value="B">
+                        <label>Benar.</label>
+                    </li>
+
+                </ul>
+            </form>
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">4.dalam sebuah kelompok, saya paling sering member perintah daripafa anggota yang lainnya?</p>
+                <ul>
+                    <li>
+                        <input name="r4" type="radio" value="A">
+                        <label>Salah.</label>
+                    </li>
+                    <li>
+                        <input name="r4" type="radio" value="B">
+                        <label>Benar.</label>
+                    </li>
+
+                </ul>
+            </form>
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">5.saya terbiasa meminta bantuan kepada orang lain?</p>
+                <ul>
+                    <li>
+                        <input name="r5" type="radio" value="A">
+                        <label>Salah.</label>
+                    </li>
+                    <li>
+                        <input name="r5" type="radio" value="B">
+                        <label>Benar.</label>
+                    </li>
+
+                </ul>
+            </form>
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">6.saya bisa dibilang lebih sukses di antar teman-teman karib saya?</p>
+                <ul>
+                    <li>
+                        <input name="r6" type="radio" value="A">
+                        <label>Salah.</label>
+                    </li>
+                    <li>
+                        <input name="r6" type="radio" value="B">
+                        <label>Benar.</label>
+                    </li>
+
+                </ul>
+            </form>
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">7.Bagi saya, penampilannya adalah segalanya</p>
+                <ul>
+                    <li>
+                        <input name="r7" type="radio" value="A">
+                        <label>Salah.</label>
+                    </li>
+                    <li>
+                        <input name="r7" type="radio" value="B">
+                        <label>Benar.</label>
+                    </li>
+
+                </ul>
+            </form>
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">8.saya tidak suka melihat anggota tim saya lambat dalam bekerja?</p>
+                <ul>
+                    <li>
+                        <input name="r8" type="radio" value="A">
+                        <label>Salah.</label>
+                    </li>
+                    <li>
+                        <input name="r8" type="radio" value="B">
+                        <label>Benar.</label>
+                    </li>
+
+                </ul>
+            </form>
+
+			<form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">9.saya paling suka menjadi seseorang pemimpin sebuah kelompok daripada hanya menjadi anggota?</p>
+                <ul>
+                    <li>
+                        <input name="r9" type="radio" value="A">
+                        <label>Salah.</label>
+                    </li>
+                    <li>
+                        <input name="r9" type="radio" value="B">
+                        <label>Benar.</label>
+                    </li>
+
+                </ul>
+            </form>
+
+
+			<form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">10.saya paling tidak suka jika ada anggota tim aau teman-teman saya kurang berprestasi?</p>
+                <ul>
+                    <li>
+                        <input name="r10" type="radio" value="A">
+                        <label>Salah.</label>
+                    </li>
+                    <li>
+                        <input name="r10" type="radio" value="B">
+                        <label>Benar.</label>
+                    </li>
+
+                </ul>
+            </form>
+
+				<form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">11.lebih baik memikirkan diri sendiri daripada orang lain?</p>
+                <ul>
+                    <li>
+                        <input name="r11" type="radio" value="A">
+                        <label>Salah.</label>
+                    </li>
+                    <li>
+                        <input name="r11" type="radio" value="B">
+                        <label>Benar.</label>
+                    </li>
+
+                </ul>
+            </form>
+
+				<form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">12.menjadi seseorang pemimpin lebih enak dari pada bawahan?</p>
+                <ul>
+                    <li>
+                        <input name="r12" type="radio" value="A">
+                        <label>Salah.</label>
+                    </li>
+                    <li>
+                        <input name="r12" type="radio" value="B">
+                        <label>Benar.</label>
+                    </li>
+
+                </ul>
+            </form>
+
+				<form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">13.saya tidak suka jika ada anggota dalam tim saya lebih ominan dari saya?</p>
+                <ul>
+                    <li>
+                        <input name="r13" type="radio" value="A">
+                        <label>Salah.</label>
+                    </li>
+                    <li>
+                        <input name="r13" type="radio" value="B">
+                        <label>Benar.</label>
+                    </li>
+
+                </ul>
+            </form>
+			 <input class="button" type="button" id="hasil_button1" value="Hasil" />
+
+        </section>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+    </div>
+
+    <div style="display:none" id="r1_box" class="comments-main wow fadeInLeft animated" data-wow-delay="0.4s">
+
+        <div class="col-md-9">
+            <p id="hasil_r1">Belum ada hasil</p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+
+</div>
+		<!--//end-services-->
+
+
+			<!--start-smoth-scrolling-->
+			<script type="text/javascript" src="js/move-top.js"></script>
+			<script type="text/javascript" src="js/easing.js"></script>
+			<script type="text/javascript">
+								jQuery(document).ready(function($) {
+									$(".scroll").click(function(event){
+										event.preventDefault();
+										$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+									});
+								});
+								</script>
+							<!--start-smoth-scrolling-->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear'
+								 		};
+										*/
+
+										$().UItoTop({ easingType: 'easeOutQuart' });
+
+									});
+								</script>
+		<a href="#head" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+
+		<script src="js/svgcheckbx.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+
+<!--//webfont-->
+<!--Animation-->
+<script src="js/wow.min.js"></script>
+<link href="css/animate.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<script type="text/javascript"src="js/underscore-min.js"></script>
+
+<style>
+.button {
+  padding: 0.5em 2em;
+  color: #fff;
+  font-weight: 600;
+  -webkit-appearance: none;
+  border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  background:#EC5844;
+  border:none;
+  outline:none;
+  box-shadow: inset 0px -2px 11px #AB0F0F;
+  -webkit-box-shadow: inset 0px -2px 11px #AB0F0F;
+  -o-box-shadow: inset 0px -2px 11px #AB0F0F;
+  -moz-box-shadow: inset 0px -2px 11px #AB0F0F;
+  display:inline-block;
+  text-decoration : none;
+  }
+
+  .button:hover{
+	opacity: 0.8;
+	color: #fff;
+}
+</style>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" charset="utf-8">
+  // Wait for Cordova to load
+  //
+  document.addEventListener("deviceready", onDeviceReady, false);
+
+  // Cordova is ready
+  //
+  function onDeviceReady() {
+
+  }
+
+  // Audio player
+  //
+  var my_media = null;
+  var mediaTimer = null;
+
+
+  // Play audio
+  //
+  function playAudio(src) {
+    // Create Media object from src
+    my_media = new Media(src, onSuccess, onError);
+
+    // Play audio
+    my_media.play();
+
+    // Update my_media position every second
+    if (mediaTimer == null) {
+      mediaTimer = setInterval(function() {
+        // get my_media position
+        my_media.getCurrentPosition(
+          // success callback
+          function(position) {
+            if (position > -1) {
+              setAudioPosition((position) + " sec");
+            }
+          },
+          // error callback
+          function(e) {
+            console.log("Error getting pos=" + e);
+            setAudioPosition("Error: " + e);
+          }
+        );
+      }, 1000);
+    }
+  }
+
+  // Pause audio
+  //
+  function pauseAudio() {
+    if (my_media) {
+      my_media.pause();
+    }
+  }
+
+  // Stop audio
+  //
+  function stopAudio() {
+    console.log("stop");
+    if (my_media) {
+      my_media.stop();
+    }
+    clearInterval(mediaTimer);
+    mediaTimer = null;
+  }
+
+  // onSuccess Callback
+  //
+  function onSuccess() {
+    console.log("playAudio():Audio Success");
+  }
+
+  // onError Callback
+  //
+  function onError(error) {
+    alert('code: ' + error.code + '\n' +
+      'message: ' + error.message + '\n');
+  }
+
+  // Set audio position
+  //
+  function setAudioPosition(position) {
+    document.getElementById('audio_position').innerHTML = position;
+  }
+</script>
+
+
+</head>
+
+<body onload="playAudio('/android_asset/www/audio/music.mp3');">
+	<div class="header box css3-shadow" id="head">
+ 	<div class="container">
+	  <div class="header-top">
+	        <div class="logo wow bounceInLeft" data-wow-delay="0.4s">
+				<a href="index.html"><img width="100" src="images/logo.png" alt=""/></a><br>
+			 </div>
+
+			<div class="clearfix"> </div>
+
+		  </div><!-- end header_main4 -->
+
+</div>
+</div>
+
+	<div id="about" class="service-section">
+
+    <div class="container">
+
+	<div style="text-align:center">
+	<a href="test2part2.html" class="button">Bagaimana <br>Kepribadianmu?</a>
+    </div><br>
+	<div  style="text-align:center">
+    <a href="test2part3.html" class="button">Apa Kamu <br>Dominan Otak<br> Kiri atau Kanan?</a>
+    </div><br>
+	<div style="text-align:center">
+    <a href="test2part4.html" class="button">Seberapa <br>Keras Kamu<br> di Tempat Kerja?</a>
+    </div><br>
+	<div style="text-align:center">
+    <a href="test2part5.html" class="button">Apa Kamu<br> Suka Mengatur?</a>
+    </div><br>
+
+
+
+
+
+	</div>
+    </div>
+
+
+
+
+
+		<!--//end-services-->
+
+			<!--/start-copyright-section-->
+
+
+			<!--//end-copyright-section-->
+			<!--start-smoth-scrolling-->
+			<script type="text/javascript" src="js/move-top.js"></script>
+			<script type="text/javascript" src="js/easing.js"></script>
+			<script type="text/javascript">
+								jQuery(document).ready(function($) {
+									$(".scroll").click(function(event){
+										event.preventDefault();
+										$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+									});
+								});
+								</script>
+							<!--start-smoth-scrolling-->
+
+		<script src="js/svgcheckbx.js"></script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<!-- Custom Theme files -->
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- Custom Theme files -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="application/x-javascript">
+		addEventListener("load", function() {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--webfont-->
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300|Open+Sans:300italic,400italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+	<!--//webfont-->
+	<!--Animation-->
+	<script src="js/wow.min.js"></script>
+	<link href="css/animate.css" rel='stylesheet' type='text/css' />
+	<script>
+		new WOW().init();
+	</script>
+	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		// Wait for Cordova to load
+		//
+		document.addEventListener("deviceready", onDeviceReady, false);
+
+		// Cordova is ready
+		//
+		function onDeviceReady() {
+
+		}
+
+		// Audio player
+		//
+		var my_media = null;
+		var mediaTimer = null;
+
+
+		// Play audio
+		//
+		function playAudio(src) {
+			// Create Media object from src
+			my_media = new Media(src, onSuccess, onError);
+
+			// Play audio
+			my_media.play();
+
+			// Update my_media position every second
+			if (mediaTimer == null) {
+				mediaTimer = setInterval(function() {
+					// get my_media position
+					my_media.getCurrentPosition(
+						// success callback
+						function(position) {
+							if (position > -1) {
+								setAudioPosition((position) + " sec");
+							}
+						},
+						// error callback
+						function(e) {
+							console.log("Error getting pos=" + e);
+							setAudioPosition("Error: " + e);
+						}
+					);
+				}, 1000);
+			}
+		}
+
+		// Pause audio
+		//
+		function pauseAudio() {
+			if (my_media) {
+				my_media.pause();
+			}
+		}
+
+		// Stop audio
+		//
+		function stopAudio() {
+			console.log("stop");
+			if (my_media) {
+				my_media.stop();
+			}
+			clearInterval(mediaTimer);
+			mediaTimer = null;
+		}
+
+		// onSuccess Callback
+		//
+		function onSuccess() {
+			console.log("playAudio():Audio Success");
+		}
+
+		// onError Callback
+		//
+		function onError(error) {
+			alert('code: ' + error.code + '\n' +
+				'message: ' + error.message + '\n');
+		}
+
+		// Set audio position
+		//
+		function setAudioPosition(position) {
+			document.getElementById('audio_position').innerHTML = position;
+		}
+	</script>
+
+
+</head>
+
+<body onload="playAudio('/android_asset/www/audio/music.mp3');">
+	<div class="header box css3-shadow" id="head">
+		<div class="container">
+			<div class="header-top">
+				<div class="logo wow bounceInLeft" data-wow-delay="0.4s">
+					<a href="index.html"><img width="100" src="images/logo.png" alt="" /></a>
+					<br>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="slider-bg">
+		<div class="container">
+			<div class="grid-1">
+				<div class="col-md-5 left-grid-1 wow bounceInLeft" data-wow-delay="0.4s">
+					<h1>Cari Tahu</h1>
+					<h2>Yuk</h2>
+				</div>
+				<div class="col-md-7 right-grid-1 wow bounceInRight" data-wow-delay="0.7s">
+					<div class="slider">
+						<div class="callbacks_container">
+							<ul class="rslides" id="slider">
+								<li>
+									<img src="images/slide.png" class="img-responsive" alt="" />
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				</script>
+				<script src="js/responsiveslides.min.js"></script>
+				<script>
+					$(function() {
+						$("#slider").responsiveSlides({
+							auto: true,
+							nav: true,
+							speed: 500,
+							namespace: "callbacks",
+							pager: true,
+						});
+					});
+				</script>
+
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//end-slider-->
+	<!--start-services-->
+	<div id="about" class="service-section">
+		<div class="container">
+			<div class="serve-grids wow bounceIn animated" data-wow-delay="0.4s">
+				<div class="col-md-4 services-section-grid">
+					<a href="tes-kepribadian.html">
+						<div class="services-section-grid-head">
+							<div class="service-icon">
+								<i class="rocket"></i>
+							</div>
+							<div class="service-icon-heading">
+								<h4>Tes Kepribadian</h4>
+								<a href="tes-kepribadian.html">
+									<p>Silahkan cari tahu hasil jawaban soal tes kepribadian</p>
+								</a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 services-section-grid">
+					<a href="test-kokologi.html">
+						<div class="services-section-grid-head">
+							<div class="service-icon">
+								<i class="plan"></i>
+							</div>
+							<div class="service-icon-heading">
+								<h4>Tes Kokologi</h4>
+								<a href="test-kokologi.html">
+									<p>Silahkan cari tahu hasil jawaban soal tes kokologi</p>
+								</a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 services-section-grid">
+					<a href="informasi.html">
+						<div class="services-section-grid-head">
+							<div class="service-icon">
+								<i class="arrow"></i>
+							</div>
+							<div class="service-icon-heading">
+								<h4>Informasi Aplikasi</h4>
+								<a href="informasi.html">
+									<p>Informasi seputar aplikasi</p>
+								</a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</a>
+				</div>
+
+
+
+				<div class="clearfix"></div>
+			</div>
+
+		</div>
+	</div>
+	<!--//end-services-->
+
+
+
+
+
+	<!--start-smoth-scrolling-->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!--start-smoth-scrolling-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear'
+								 		};
+										*/
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<a href="#head" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+
+
+</body>
+
+</html>

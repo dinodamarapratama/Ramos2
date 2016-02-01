@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Studeon Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+
+<!--//webfont-->
+<!--Animation-->
+<script src="js/wow.min.js"></script>
+<link href="css/animate.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<!--<script type="text/javascript"src="js/underscore-min.js"></script>-->
+<script type="text/javascript"src="js/lodash.min.js"></script>
+<script>
+
+    var array1 = [];
+
+
+$(document).ready(function() {
+    $("input:radio[name=r1]").click(function() {
+        array1.push($(this).val());
+	});
+
+
+	$("input:radio[name=r2]").click(function() {
+       array1.push($(this).val());
+    });
+
+
+	$("input:radio[name=r3]").click(function() {
+       array1.push($(this).val());
+    });
+
+
+	$("input:radio[name=r4]").click(function() {
+       array1.push($(this).val());
+    });
+
+
+
+	$("input:radio[name=r5]").click(function() {
+       array1.push($(this).val());
+    });
+
+
+	$("input:radio[name=r6]").click(function() {
+       array1.push($(this).val());
+    });
+
+
+	$("input:radio[name=r7]").click(function() {
+       array1.push($(this).val());
+    });
+
+	$("input:radio[name=r8]").click(function() {
+       array1.push($(this).val());
+    });
+
+	$("input:radio[name=r9]").click(function() {
+       array1.push($(this).val());
+    });
+
+	$("input:radio[name=r10]").click(function() {
+       array1.push($(this).val());
+    });
+
+	$("input:radio[name=r11]").click(function() {
+       array1.push($(this).val());
+    });
+
+	$("input:radio[name=r12]").click(function() {
+       array1.push($(this).val());
+    });
+
+	$("input:radio[name=r13]").click(function() {
+       array1.push($(this).val());
+    });
+
+	$("input:radio[name=r14]").click(function() {
+       array1.push($(this).val());
+    });
+
+	$("input:radio[name=r15]").click(function() {
+       array1.push($(this).val());
+    });
+
+	$("input:radio[name=r16]").click(function() {
+       array1.push($(this).val());
+    });
+
+	$("input:radio[name=r17]").click(function() {
+       array1.push($(this).val());
+    });
+
+
+	$("input:radio[name=r18]").click(function() {
+       array1.push($(this).val());
+    });
+
+	$("input:radio[name=r19]").click(function() {
+       array1.push($(this).val());
+    });
+
+	$("input:radio[name=r20]").click(function() {
+       array1.push($(this).val());
+    });
+
+    $("#hasil_button1").click(function() {
+
+
+
+		 var value1 = (_.chain(array1).countBy().pairs().max(_.last).head().value());
+		 var r1_box = document.getElementById('r1_box');
+         r1_box.style.display = (r1_box.style.display != 'none') ? 'visible' : '';
+
+		if (value1 == 'A') {
+            document.getElementById('hasil_r1').innerHTML = " Berarti kamu dominan menggunakan otak kiri.Kamu adalah orang yang lebih banyak berpikir dan kurang begitu suka sesuatu yang muluk-muluk. Banyak orang yang kagum dengan kamu karena kedisplinan dan ketelitian kamu. Salah satu kehebatan dari kamu adalah kamu lebih suka focus terhadap satu pekerjaandan baru bisa mengerjakan pekerjaan lain jika pekerjaan yang sedang kamun lakukan sudah selesei.";
+
+		};
+        if (value1 == 'B') {
+            document.getElementById('hasil_r1').innerHTML = " Berarti kamu adalah tipe orang yang dominan menggunakan otak kanan. Kamu adlah orang  yang ska berangan-angan dan juga cepat bosan. Kamu sangat menyukai cerita fiksi dan cerita-cerita yang bersifat khayalan semata. Rasa cinta kamu terhadap seni juga cukup tinggi,baik itu seni audio,visual maupun audio visual.kamu orang yang moody dan kamu selalu ceroboh dalam beberapa hal. Untuk menjadi seseorang yang kreatif,kamu harus melatih otak kanan kamu. ";
+
+		};
+
+
+		array1 = [];
+
+    });
+
+
+
+});
+</script>
+<style>
+.button {
+  float:right;
+  padding: 1em 3em;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-appearance: none;
+  border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  background:#EC5844;
+  border:none;
+  outline:none;
+  box-shadow: inset 0px -2px 11px #AB0F0F;
+  -webkit-box-shadow: inset 0px -2px 11px #AB0F0F;
+  -o-box-shadow: inset 0px -2px 11px #AB0F0F;
+  -moz-box-shadow: inset 0px -2px 11px #AB0F0F;
+  }
+
+  .button:hover{
+	opacity: 0.8;
+}
+</style>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" charset="utf-8">
+  // Wait for Cordova to load
+  //
+  document.addEventListener("deviceready", onDeviceReady, false);
+
+  // Cordova is ready
+  //
+  function onDeviceReady() {
+
+  }
+
+  // Audio player
+  //
+  var my_media = null;
+  var mediaTimer = null;
+
+
+  // Play audio
+  //
+  function playAudio(src) {
+    // Create Media object from src
+    my_media = new Media(src, onSuccess, onError);
+
+    // Play audio
+    my_media.play();
+
+    // Update my_media position every second
+    if (mediaTimer == null) {
+      mediaTimer = setInterval(function() {
+        // get my_media position
+        my_media.getCurrentPosition(
+          // success callback
+          function(position) {
+            if (position > -1) {
+              setAudioPosition((position) + " sec");
+            }
+          },
+          // error callback
+          function(e) {
+            console.log("Error getting pos=" + e);
+            setAudioPosition("Error: " + e);
+          }
+        );
+      }, 1000);
+    }
+  }
+
+  // Pause audio
+  //
+  function pauseAudio() {
+    if (my_media) {
+      my_media.pause();
+    }
+  }
+
+  // Stop audio
+  //
+  function stopAudio() {
+    console.log("stop");
+    if (my_media) {
+      my_media.stop();
+    }
+    clearInterval(mediaTimer);
+    mediaTimer = null;
+  }
+
+  // onSuccess Callback
+  //
+  function onSuccess() {
+    console.log("playAudio():Audio Success");
+  }
+
+  // onError Callback
+  //
+  function onError(error) {
+    alert('code: ' + error.code + '\n' +
+      'message: ' + error.message + '\n');
+  }
+
+  // Set audio position
+  //
+  function setAudioPosition(position) {
+    document.getElementById('audio_position').innerHTML = position;
+  }
+</script>
+
+
+</head>
+
+<body onload="playAudio('/android_asset/www/audio/music.mp3');">
+	<div class="header box css3-shadow" id="head">
+ 	<div class="container">
+	  <div class="header-top">
+	        <div class="logo wow bounceInLeft" data-wow-delay="0.4s">
+				<a href="index.html"><img width="100" src="images/logo.png" alt=""/></a><br>
+			 </div>
+
+			<div class="clearfix"> </div>
+
+		  </div><!-- end header_main4 -->
+	</div>
+</div>
+
+	<!--start-services-->
+
+	<div id="about" class="service-section">
+    <div class="container">
+        <section>
+            <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <h3 style="font-weight: 300;padding: 0 0 0.5em"> Apa Kamu Dominan otak Kanan atau Kiri </h3>
+                <br><p style="font-size:15px">Sebagaimana yang sudah kita ketahui bersama-sama bahwa otak manusia itu terbagi dalam dua bagian, yaitu otak kanan dan otak kiri dengan fungsi yang berbeda-beda
+				<br><br>Otak kanan sering diidentikan tentang daya atau kemampuan kreativitas seseorang, persamaan, khayalan, bentuk atau ruang, emosi, musik danwarna, berpikir lateral, tidak terstruktur, dan cenderung tida pernah  suka berpikir mengenai hal-hal yang terlalu detail. Adapun otak kiri biasanya identik dengan kerapian, perbedaan, angka, urutan, dan masih banyak lagi
+				<br><br>Dalam diri manusia, terkadang tidak selamanya kedua otak terebut dapat bekerjasama dengan baik. Ada yang mendominasi, apakah itu otak kanan atau kiri. bila kamuingin tahu diri kamu lebih didominasi oleh otak kanan atau otak kiri, silahkan untuk mengikuti kuis berikut ini. </b></p>
+				<br>
+                <p style="font-size:15px">1.Bagaimanakah kamu menggambarkan meja kerja kamu?</p>
+                <ul>
+                    <li>
+                        <input name="r1" type="radio" value="A" >
+                        <label>selalu rapi</label>
+                    </li>
+                    <li>
+                        <input name="r1" type="radio" value="B" >
+                        <label> Sangat berantakan  </label>
+                    </li>
+
+                </ul>
+            </form>
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">2.Bagaimanakah kamu menyelesaikan tugas-tugas kamu?</p>
+                <ul>
+                    <li>
+                        <input name="r2" type="radio" value="A">
+                        <label> menyeleseikannya satu persatu.</label>
+                    </li>
+                    <li>
+                        <input name="r2" type="radio" value="B" >
+                        <label> menyelesaikan beberapa pekerjaan dalam satu waktu.</label>
+                    </li>
+
+                </ul>
+            </form>
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">3. apakah kamu mempermasalahkan sarapan kamu yang selalu sama tiap hari dalam satu bulan?</p>
+                <ul>
+                    <li>
+                        <input name="r3" type="radio" value="A" >
+                        <label>tidak terlalu mempermaslahkannnya.</label>
+                    </li>
+                    <li>
+                        <input name="r3" type="radio" value="B" >
+                        <label>selalu mempermaslahkannya.</label>
+                    </li>
+
+                </ul>
+            </form>
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">4.apakah kamu memiliki tempat khususu untuk meletakka barang-barang kamu?</p>
+                <ul>
+                    <li>
+                        <input name="r4" type="radio" value="A" >
+                        <label>ya,sering.</label>
+                    </li>
+                    <li>
+                        <input name="r4" type="radio" value="B"  >
+                        <label>tidak,jarang ada tempat khusus untuk barang-barang kamu.</label>
+                    </li>
+
+                </ul>
+            </form>
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">5.apa yang kamu ingat dari teman teman  sekolah kamu?</p>
+                <ul>
+                    <li>
+                        <input name="r5" type="radio" value="A" >
+                        <label>namanya.</label>
+                    </li>
+                    <li>
+                        <input name="r5" type="radio" value="B" >
+                        <label>wajahnya.</label>
+                    </li>
+
+                </ul>
+            </form>
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">6.apa yang kamu lakukan di waktu senggang kamu?</p>
+                <ul>
+                    <li>
+                        <input name="r6" type="radio" value="A">
+                        <label>selalu merencanakan sesuatu tentang masa depan.</label>
+                    </li>
+                    <li>
+                        <input name="r6" type="radio" value="B" >
+                        <label>hanya melamun tidak tentu arah .</label>
+                    </li>
+
+                </ul>
+            </form>
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">7.apakah merasa terganggu jika bekerja sambli mendengarkan music?</p>
+                <ul>
+                    <li>
+                        <input name="r7" type="radio" value="A">
+                        <label>ya.</label>
+                    </li>
+                    <li>
+                        <input name="r7" type="radio" value="B" >
+                        <label>tidak</label>
+                    </li>
+
+                </ul>
+            </form>
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">8.kapankah biasanya ide segar kamu keluar?</p>
+                <ul>
+                    <li>
+                        <input name="r8" type="radio" value="A"  >
+                        <label>ketika kamu sedang duduk di ruang kerja.</label>
+                    </li>
+                    <li>
+                        <input name="r8" type="radio" value="B" >
+                        <label>ketika sedang bersantai-santai bersama sejumlah teman kamu.</label>
+                    </li>
+
+                </ul>
+            </form>
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">9.apakah kamu bisa memperkirakan waktu tanpa harus melihat jam?</p>
+                <ul>
+                    <li>
+                        <input name="r9" type="radio" value="A" >
+                        <label>tidak bisa.</label>
+                    </li>
+                    <li>
+                        <input name="r9" type="radio" value="B">
+                        <label>bisa.</label>
+                    </li>
+
+                </ul>
+            </form>
+
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">10.Bagaiamna tangan kamu ketika sedang berbicara?</p>
+                <ul>
+                    <li>
+                        <input name="r10" type="radio" value="A" >
+                        <label>cenderung diam.</label>
+                    </li>
+                    <li>
+                        <input name="r10" type="radio" value="B" >
+                        <label>sering bergerak-gerak.</label>
+                    </li>
+
+                </ul>
+            </form>
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">11.Pertanyaan seperti apakah yang paling kamu sukai?</p>
+                <ul>
+                    <li>
+                        <input name="r11" type="radio" value="A" >
+                        <label>check point atau pilihan ganda.</label>
+                    </li>
+                    <li>
+                        <input name="r11" type="radio" value="B" >
+                        <label>uraian atau essay.</label>
+                    </li>
+
+                </ul>
+            </form>
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">12.Ketika bos kamu sedang memarahi kamu,apa yang kamu perhatikan dari bos kamu tersebut?</p>
+                <ul>
+                    <li>
+                        <input name="r12" type="radio" value="A" >
+                        <label>apa yang beliau katakan.</label>
+                    </li>
+                    <li>
+                        <input name="r12" type="radio" value="B">
+                        <label>bagaimana cara beliau mengatakan.</label>
+                    </li>
+
+                </ul>
+            </form>
+
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">13.Pada dasarnya orang yang seperti apakah kamu?</p>
+                <ul>
+                    <li>
+                        <input name="r13" type="radio" value="A" >
+                        <label>orang yang stabil.</label>
+                    </li>
+                    <li>
+                        <input name="r13" type="radio" value="B" >
+                        <label>orang yang fleksibel.</label>
+                    </li>
+
+                </ul>
+            </form>
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">14.Apakah yang kamu gunaka sebagai dasar dalam mengambil suatu keputusan?</p>
+                <ul>
+                    <li>
+                        <input name="r14" type="radio" value="A" >
+                        <label>logika.</label>
+                    </li>
+                    <li>
+                        <input name="r14" type="radio" value="B" >
+                        <label>intuisi.</label>
+                    </li>
+
+                </ul>
+            </form>
+
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">15.Apa yang mkamu gunakan sebagai dasar dalam mencari pekerjaan?</p>
+                <ul>
+                    <li>
+                        <input name="r15" type="radio" value="A" >
+                        <label>besar kecilnya gaji.</label>
+                    </li>
+                    <li>
+                        <input name="r15" type="radio" value="B">
+                        <label>masa depan.</label>
+                    </li>
+
+                </ul>
+            </form>
+
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">16.Menurut kamu,bagaimanakah sikap kamu dalam bertindak?</p>
+                <ul>
+                    <li>
+                        <input name="r16" type="radio" value="A" >
+                        <label>selalu berpegang teguh pada prinsip.</label>
+                    </li>
+                    <li>
+                        <input name="r16" type="radio" value="B">
+                        <label>selalu menyesuaikan diri dengan situasi dan kondisi.</label>
+                    </li>
+
+                </ul>
+            </form>
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">17.Apa yang kamu pikirkan ketika sedang menonton sebuah film di layar kaca?</p>
+                <ul>
+                    <li>
+                        <input name="r17" type="radio" value="A" >
+                        <label>alur cerita film tersebut.</label>
+                    </li>
+                    <li>
+                        <input name="r17" type="radio" value="B">
+                        <label>pesan yang kamu temukan dari film tersebut .</label>
+                    </li>
+
+                </ul>
+            </form>
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">18.apakah kamu termasuk orang yang sering bercerita kepada teman-teman kamu?</p>
+                <ul>
+                    <li>
+                        <input name="r18" type="radio" value="A" >
+                        <label>tidak.</label>
+                    </li>
+                    <li>
+                        <input name="r18" type="radio" value="B" >
+                        <label>ya.</label>
+                    </li>
+
+                </ul>
+            </form>
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">19.Apakah bisa menjelaskan jawaban soal matematika yang kamu temukan?</p>
+                <ul>
+                    <li>
+                        <input name="r19" type="radio" value="A" >
+                        <label>ya,bisa menjelaskan jawaban tersebut.</label>
+                    </li>
+                    <li>
+                        <input name="r19" type="radio" value="B" >
+                        <label>bisa menjawab pertanyaan tapi tidak bisa menjabarkannya.</label>
+                    </li>
+
+                </ul>
+            </form>
+
+
+			 <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+                <br>
+                <p style="font-size:15px">20.menurut kamu,seperti apakah diri kamu yang sebenernya?</p>
+                <ul>
+                    <li>
+                        <input name="r20" type="radio" value="A" >
+                        <label>selalu melakukan hal-hal yang sudah terbukti kebenarannya.</label>
+                    </li>
+                    <li>
+                        <input name="r20" type="radio" value="B" >
+                        <label>selalu melakukan hal-hal yang baru bagi kamu.</label>
+                    </li>
+
+                </ul>
+            </form>
+			   <input class="button" type="button" id="hasil_button1" value="Hasil" />
+
+        </section>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+    </div>
+
+    <div style="display:none" id="r1_box" class="comments-main wow fadeInLeft animated" data-wow-delay="0.4s">
+
+        <div class="col-md-9">
+
+            <p id="hasil_r1">Belum ada hasil</p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+
+
+</div>
+		<!--//end-services-->
+
+
+			<!--start-smoth-scrolling-->
+			<script type="text/javascript" src="js/move-top.js"></script>
+			<script type="text/javascript" src="js/easing.js"></script>
+			<script type="text/javascript">
+								jQuery(document).ready(function($) {
+									$(".scroll").click(function(event){
+										event.preventDefault();
+										$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+									});
+								});
+								</script>
+							<!--start-smoth-scrolling-->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear'
+								 		};
+										*/
+
+										$().UItoTop({ easingType: 'easeOutQuart' });
+
+									});
+								</script>
+		<a href="#head" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+
+		<script src="js/svgcheckbx.js"></script>
+</body>
+</html>

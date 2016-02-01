@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Studeon Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+
+<!--//webfont-->
+<!--Animation-->
+<script src="js/wow.min.js"></script>
+<link href="css/animate.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<script type="text/javascript"src="js/underscore-min.js"></script>
+<script>
+	var value1 = '';
+	var value2 = '';
+	var value3 = ''; //tambahin setiap buat container
+	var value4 = '';
+	var value5 = '';
+	var value6 = '';
+	var value7 = '';
+	var value8 = '';
+	var value9 = '';
+	var value10 = '';
+$(document).ready(function() {
+
+
+
+    $("input:radio[name=r1]").click(function() {
+        value1 = $(this).val();
+
+        if (value1 == 'A') {
+            document.getElementById('hasil_r1').innerHTML = "kamu bukanlah orang yang optimis. Kamu tidak pernah percaya bahwa sesuatu yang buruk bisa menjadi baik. Kamu belu bisa memercayai bahwa sejahat-jahatnya orang bisa menjadi baik. Maka dari itu, pupuklah rasa optimis dalam diri kamu dengan selalu percaya pada diri sendiri. Yakinlah, bahwa tidak ada sesuatu yang abadi di jagat ini. Semua akan berubah mengikuti seberapa besar usaha seseorang dalam mengubahnya";
+			$('#B1').hide();
+			$('#C1').hide();
+			$('#D1').hide();
+        };
+        if (value1 == 'B') {
+            document.getElementById('hasil_r1').innerHTML = "kamu termasuk orang yang optimis. Kamu sangat memercayai adanya asumsi yang mengatakan bahwa hidup ini terkadang bisa baik ataupun buruk. Kamu bukanlah orang yang suka melawan kenyataan. Kamu adalah orang yang tidak main-main,atau cukup hati-hati dalam merencanakan masa depan.";
+			$('#A1').hide();
+			$('#C1').hide();
+			$('#D1').hide();
+        };
+
+        if (value1 == 'C') {
+            document.getElementById('hasil_r1').innerHTML = "kamu adalah orang yang sangat tenang dan tegas dalam melakukan sesuatu. Kamu tidak suka melakukan pekerjaan bila selalu ditekan. Kamu ingin menunjukan bahwa kamu bisa melakukan sesuatu yang baik tanpa harus ditekan sebelumnya";
+			$('#A1').hide();
+			$('#B1').hide();
+			$('#D1').hide();
+        };
+        if (value1 == 'D') {
+            document.getElementById('hasil_r1').innerHTML = "kamu adalah orang yang sangat berani dalam menentukan sikap. Kamu tidak mau dikuasai oleh rasa takut. Kamu tidak mau berada di bawah tekanan orang lain";
+			$('#A1').hide();
+			$('#B1').hide();
+			$('#C1').hide();
+		};
+    });
+
+    $("#r1_button").click(function() {
+
+        var r1_box = document.getElementById('r1_box');
+        r1_box.style.display = (r1_box.style.display != 'none') ? 'visible' : '';
+    });
+
+
+
+
+
+
+
+
+
+
+	  $("input:radio[name=r2]").click(function() {
+        value2 = $(this).val();
+
+        if (value2 == 'A') {
+            document.getElementById('hasil_r2').innerHTML = "Kamu adalah orang yang sangat menarik karena kamu bukan tipe orang yang banyak ingin tahu. Apa yang kamu hadapi, itulah yang ingin kamu nikmati. Kejujuran hati tersebutlah yang membuat kamu terlihat sangat menarik di hadapan banyak orang.";
+			$('#B2').hide();
+			$('#C2').hide();
+			$('#D2').hide();
+		};
+        if (value2 == 'B') {
+            document.getElementById('hasil_r2').innerHTML = " Kamu termasuk orang yang sangat jujur dan suka berterus terang, meskipun sebenernya kamu memiliki setumpuk perasaan yang tidak ingin kamu katakan kepada orang lain. Sikap kamu tersebut memang patut untuk diancungi jempiol, karena pandai dalam menjaga perasaan orang. Namun demikian, kamu juga perlu memerhatikan perasaan kamu. Karena jika bukan kamu yang mengerti diri kamu sendiri, siapa lagi?";
+			$('#A2').hide();
+			$('#C2').hide();
+			$('#D2').hide();
+		};
+
+        if (value2 == 'C') {
+            document.getElementById('hasil_r2').innerHTML = " Kamu adalah orang yang pandai dalam menyembunyikan nafsu. Orang yang membayangkan tentang tumpukan makanan adalah mereka yang berusaha untuk menutupi nafsunya. Kamu mencoba menekan semua nafsu yang kamu miliki, entah nafsu apa pun itu";
+			$('#A2').hide();
+			$('#B2').hide();
+			$('#D2').hide();
+		};
+        if (value2 == 'D') {
+            document.getElementById('hasil_r2').innerHTML = " Kamu adalah orang yang bisa menguasia diri. Kamu bisa mengikat emosi kamu, rasa kamu untuk terlihat menonjol di antara teman-teman dan lain sebagainya. Kamu tidak suka menngeluh atau membiarkan orang kasihan terhadap diri kamu sendiri, dan lain sebagainya. meskipun demikian, ada baiknya bila kamu sedikit terbuka pada orang lain. Jika kamu sedang ada masalah,katakan pada orang lain agar mereka bisa memberikan solusinya. Bukankah lebih baik sedikit terbuka daripada kamu menutupi sesuatu yang kelak akan tercium bau busuknya?";
+			$('#A2').hide();
+			$('#B2').hide();
+			$('#C2').hide();
+		};
+    });
+
+    $("#r2_button").click(function() {
+
+        var r2_box = document.getElementById('r2_box');
+        r2_box.style.display = (r2_box.style.display != 'none') ? 'visible' : '';
+    });
+
+
+
+	$("input:radio[name=r3]").click(function() {
+        value3 = $(this).val();
+
+        if (value3 == 'A') {
+            document.getElementById('hasil_r3').innerHTML = "Berarti kamu mendapatkan sebuah anugerah yang sangat jarang dimiliki oleh oranglain, yaitu sensitivitas yang tinggi Dengan demikian, kamu bisa memutuskan sesuatu tanpa harus menyelusuri bukti-bukti secara terperinci. Kamu hanya tinggal memercayai keyakinan kamu. Dengan bakat yang kamu miliki tersebut, kamu bisa menjadi seorang decision maker atau pembuat keputusan";
+			$('#B3').hide();
+			$('#C3').hide();
+			$('#D3').hide();
+		};
+        if (value3 == 'B') {
+            document.getElementById('hasil_r3').innerHTML = " Kamu meiliki bakat dalam hal hubungan antarpribadi. Orang-orang di sekitar kamu akan sangat mengagumi gaya kamu dalam berkomunikasi dengan banyak orang yang begitu hangat. Kemampuan kamu dalam berkomunikasi dan sering meringankan beban orang lain,membuat kamu menjadi tokoh sentral dalam sebuah tim. Oleh karena itu,kehadiran kamu sangat berharga di mata banyak orang.";
+			$('#A3').hide();
+			$('#C3').hide();
+			$('#D3').hide();
+		};
+
+        if (value3 == 'C') {
+            document.getElementById('hasil_r3').innerHTML = " Kamu memiliki kemampuan berbicara yang sangat ekspresif. Kamu sangat pandai menata bahasa, mencari kata-kata yang bia mewakili apa yang sedang kamu rasakan saat itu. Kamu memiliki kemampuan yang sempurna untuk meringankan beban orang lain melalui nasihat-nasihat atau petuah ekspresif yang kamu berikan";
+			$('#A3').hide();
+			$('#B3').hide();
+			$('#D3').hide();
+		};
+        if (value3 == 'D') {
+            document.getElementById('hasil_r3').innerHTML = " Bahwa kamu adalah seseorang yang menjadi sumber kreativitsa. Kamu merupakan gudangnya ide-ide kreatif. Kamu hanya tinggal menyesuaikan diri dengan orang-orang di sekitar kamu. Pastikan bahwa ide-ide kreatif kamu seimbang dengan daya atau kemampuan orang-orang di sekitar kamu. Jangan sampai ide-ide amu tersebut terkesan mewah tapi tidak bisa terwujud karena minimnya sumber daya manusia yang ada";
+			$('#A3').hide();
+			$('#B3').hide();
+			$('#C3').hide();
+		};
+    });
+
+    $("#r3_button").click(function() {
+
+        var r3_box = document.getElementById('r3_box');
+        r3_box.style.display = (r3_box.style.display != 'none') ? 'visible' : '';
+    });
+
+
+
+
+
+
+
+
+	$("input:radio[name=r4]").click(function() {
+        value4 = $(this).val();
+
+        if (value4 == 'A') {
+            document.getElementById('hasil_r4').innerHTML = "Kamu adalah orang yang tidak sempat untuk panik karena sibuk untuk mencari solusi atas masalah yang sedang kamu hadapi ";
+			$('#A4').hide();
+			$('#C4').hide();
+
+		};
+        if (value4 == 'B') {
+            document.getElementById('hasil_r4').innerHTML = "Kamu adalah orang sangat santai, meskipun di waktu yang genting sekalipun";
+			$('#A4').hide();
+			$('#C4').hide();
+
+		};
+
+        if (value4 == 'C') {
+            document.getElementById('hasil_r4').innerHTML = "Kamu adalah orang yang tidak pernah lengah, walaupun kamu memiliki pembawaan yang sangat santai";
+			$('#A4').hide();
+			$('#B4').hide();
+
+		};
+
+    });
+
+    $("#r4_button").click(function() {
+
+        var r4_box = document.getElementById('r4_box');
+        r4_box.style.display = (r4_box.style.display != 'none') ? 'visible' : '';
+    });
+
+
+
+
+
+		$("input:radio[name=r5]").click(function() {
+        value5 = $(this).val();
+
+        if (value5 == 'A') {
+            document.getElementById('hasil_r5').innerHTML = "Kamu adalah orang yang pandai dalam menyelesaikan masalah dengan cepat dan tepat. Kamu adalah orang yang sangat diharap-harapkan oleh banyak orang sebagai pemberi solusi atas berbagai macam masalah yang sedang mereka hadapi";
+			$('#B5').hide();
+			$('#C5').hide();
+			$('#D5').hide();
+		};
+        if (value5 == 'B') {
+            document.getElementById('hasil_r5').innerHTML = "Kamu adalah orang yang sangat artistik. Kamu memang agak sedikit aneh karena selalu memiliki cara yang lain dalam menyelesaikan masalah-masalah yang sedang kamu hadapi.";
+			$('#A5').hide();
+			$('#C5').hide();
+			$('#D5').hide();
+		};
+
+        if (value5 == 'C') {
+            document.getElementById('hasil_r5').innerHTML = "Kamu adalah orang yang memiliki rasa cinta dan belas kasih sayang yang banyak. Kamu mampu menempatkan diri pada posisi yang tepat, sehingga kamu bisa lebih leluasa memerhatikan dan menyayangi orang-orang yang berada di sekitar kamu.";
+			$('#A5').hide();
+			$('#B5').hide();
+			$('#D5').hide();
+		};
+        if (value5 == 'D') {
+            document.getElementById('hasil_r5').innerHTML = "Kamu adalah orang yang sangat energik, memiliki banyak waktu untuk memerhatikan orang banyak, sehingga kamu bisa lupa akan masalah kamu sendiri";
+			$('#A5').hide();
+			$('#B5').hide();
+			$('#C5').hide();
+		};
+    });
+
+    $("#r5_button").click(function() {
+
+        var r5_box = document.getElementById('r5_box');
+        r5_box.style.display = (r5_box.style.display != 'none') ? 'visible' : '';
+    });
+
+
+
+
+	$("input:radio[name=r6]").click(function() {
+        value6 = $(this).val();
+
+        if (value6 == 'A') {
+            document.getElementById('hasil_r6').innerHTML = " Kamu adalah orang yang memiliki rasa optimis tinggi. Kamu yakin bahwa segalanya pasti bisa selama ada usaha yang sepadan";
+			$('#B6').hide();
+			$('#C6').hide();
+			$('#D6').hide();
+		};
+        if (value6 == 'B') {
+            document.getElementById('hasil_r6').innerHTML = " Kamu adalah orang yang cukup waspada dalam segala hal. Kamu betul-betul memerhatikan sebuah tindakan secara terperinci, mulai dari besar kecil manfaatnya, sampai besar kecilnya risiko atau efek dari tindakan yang akan kamu ambil tersebut ";
+			$('#A6').hide();
+			$('#C6').hide();
+			$('#D6').hide();
+		};
+
+        if (value6 == 'C') {
+            document.getElementById('hasil_r6').innerHTML = " Kamu adalah orang yang bisa menggunakan waktu dengan baik, termasuk untuk tertawa, meskipun kamu sedang menghadapi masalah yang sangat pelik";
+			$('#A6').hide();
+			$('#B6').hide();
+			$('#D6').hide();
+		};
+        if (value6 == 'D') {
+            document.getElementById('hasil_r6').innerHTML = " Kamu adalah orang yang bayak berpikir dan memanfaatkan energi untuk menghadapi masalah yang sedang kamu hadapi";
+			$('#A6').hide();
+			$('#B6').hide();
+			$('#C6').hide();
+		};
+    });
+
+    $("#r6_button").click(function() {
+
+        var r6_box = document.getElementById('r6_box');
+        r6_box.style.display = (r6_box.style.display != 'none') ? 'visible' : '';
+    });
+
+
+
+
+	$("input:radio[name=r7]").click(function() {
+        value7 = $(this).val();
+
+        if (value7 == 'A') {
+            document.getElementById('hasil_r7').innerHTML = " Kamu memiliki kepribadian seperti anak kecil. Kamu sangat plos, jujur, dan tidak bisa dipengaruhi oleh pihak manapun. Meskipun demikian, kepolosan itu bisa menjadi kelemahan buat kamu, karena orang-orang akan mudah membohongi kamu.";
+			$('#B7').hide();
+			$('#C7').hide();
+			$('#D7').hide();
+		};
+        if (value7 == 'B') {
+            document.getElementById('hasil_r7').innerHTML = "Kamu adalah orang yang mudah bersosialisasi meskipun kamu tidak memiliki keberanian untuk berhubungan secara langsung dengan orang-orang tersebut";
+			$('#A7').hide();
+			$('#C7').hide();
+			$('#D7').hide();
+		};
+
+        if (value7 == 'C') {
+            document.getElementById('hasil_r7').innerHTML = "Kamu adalah orang yangs angat simpel. Jika kamu sudah menemukan sesuatu yang kamu cari kamu tidak perlu mencari yang lainnya.";
+			$('#A7').hide();
+			$('#B7').hide();
+			$('#D7').hide();
+		};
+        if (value7 == 'D') {
+            document.getElementById('hasil_r7').innerHTML = "Kamu adalah orang yang cukup selektif. Kamu tidak mau sembarangan memilih sesuatu seperti barang, makanan, tempat tinggal. Bahkan kamu juga tidak mau sembarangan dalam memilih sahabat atau teman hidup";
+			$('#A7').hide();
+			$('#B7').hide();
+			$('#C7').hide();
+		};
+    });
+
+    $("#r7_button").click(function() {
+
+        var r7_box = document.getElementById('r7_box');
+        r7_box.style.display = (r7_box.style.display != 'none') ? 'visible' : '';
+    });
+
+
+
+	$("input:radio[name=r8]").click(function() {
+        value8 = $(this).val();
+
+        if (value8 == 'A') {
+            document.getElementById('hasil_r8').innerHTML = "Kamu adalah orang yang mampu memainkan titik-titik paling sensitif dari pasangan kamu. Sebagaimana sebuah biola yang membutuhkan gerakan jari sensitif dan sentuhan yang lembut untuk menghasilkan suara dari dawai-dawainya";
+			$('#B8').hide();
+			$('#C8').hide();
+			$('#D8').hide();
+		};
+        if (value8 == 'B') {
+            document.getElementById('hasil_r8').innerHTML = "Kamu adalah orang yang pintar menggoda pasangan kamu, sehingga ia bersedia mengikuti apa pun yang kamu perintahkan. Kamu berhasil membuat pasangan kamu bertekuk lutut kepada kamu. Meskipun demikian, kamu bisa memanfaatkannya untuk hal yang tidak benar. Karena kamu harus sadar bahwa meskipun ada seseorang yang mau menuruti perintah kamu, tetapi mereka juga memiliki hati dan pikiran yang bisa membedakan mana yang baik dan mana yang tidak baik";
+			$('#A8').hide();
+			$('#C8').hide();
+			$('#D8').hide();
+		};
+
+        if (value8 == 'C') {
+            document.getElementById('hasil_r8').innerHTML = " Kamu adalah tipe orang yang sangat mahir menggunakan bibir. tentu saja dalam hal ini tidak selalu berhubungan dengan aktifitas fisik, tapi juga gaya verbal dalam mengungakapkan isi hati perasaan kamu";
+			$('#A8').hide();
+			$('#B8').hide();
+			$('#D8').hide();
+		};
+
+        if (value8 == 'D') {
+            document.getElementById('hasil_r8').innerHTML = " Kamu memiliki kesabaran yang cukup besar kepada pasangan kamu. Kesabaran kamu tersebutlah yang membuat dia semakin tertarik dengan kamu";
+			$('#A8').hide();
+			$('#B8').hide();
+			$('#C8').hide();
+		};
+    });
+
+    $("#r8_button").click(function() {
+
+        var r8_box = document.getElementById('r8_box');
+        r8_box.style.display = (r8_box.style.display != 'none') ? 'visible' : '';
+    });
+
+
+
+	$("input:radio[name=r9]").click(function() {
+        value9 = $(this).val();
+
+        if (value9 == 'A') {
+            document.getElementById('hasil_r9').innerHTML = "Kamu mencari orang yang benar-benar mencintai dan menyukai kamu. Yakni,seseorang yang tidak mencintai kamu karena sesuatu atau kelebihan yang kamu miliki.";
+			$('#B9').hide();
+			$('#C9').hide();
+			$('#D9').hide();
+		};
+        if (value9 == 'B') {
+            document.getElementById('hasil_r9').innerHTML = " Kamu menjadi orang ketiga dalam sebuah hubungan. Dalam hal ini, kamu diminta untuk berpikir dewasa, apakah kamu harus mempertahankan cintamu atau meninggalkan cinta tersebut, karena menjadi orang ketiga bukanlah keputusan yang bijak";
+			$('#A9').hide();
+			$('#C9').hide();
+			$('#D9').hide();
+		};
+
+        if (value9 == 'C') {
+            document.getElementById('hasil_r9').innerHTML = " Kamu adalah orang yang gemar bermain cinta atau sering diistilahkan sebagai playboy atau playgirl.";
+			$('#A9').hide();
+			$('#B9').hide();
+			$('#D9').hide();
+		};
+
+        if (value9 == 'D') {
+            document.getElementById('hasil_r9').innerHTML = " Kamu adalah tipe pasangan yang sangat setia. Kamu memiliki prinsip yang sama dengan sebuah pohon, yaitu sekali tumbuh di sebuah tempat tidak bisa dipindah-pindah.";
+			$('#A9').hide();
+			$('#B9').hide();
+			$('#C9').hide();
+		};
+    });
+
+    $("#r9_button").click(function() {
+
+        var r9_box = document.getElementById('r9_box');
+        r9_box.style.display = (r9_box.style.display != 'none') ? 'visible' : '';
+    });
+
+
+
+	$("input:radio[name=r10]").click(function() {
+        value10 = $(this).val();
+
+        if (value10 == 'A') {
+            document.getElementById('hasil_r10').innerHTML = " Dia adalah orang yang enak untuk diajak berbicara. Dia selau memberikan response terhadap berbagai macam tem pembicaraan kamu";
+			$('#B10').hide();
+			$('#C10').hide();
+			$('#D10').hide();
+		};
+        if (value10 == 'B') {
+            document.getElementById('hasil_r10').innerHTML = " Dia adalah orang yang sangat menarik. Dia memiliki daya tarik yang tidak kamu dapatkan dari orang lain.";
+			$('#A10').hide();
+			$('#C10').hide();
+			$('#D10').hide();
+		};
+
+        if (value10 == 'C') {
+            document.getElementById('hasil_r_10').innerHTML = " Dia adalah orang yang pantas untuk kamu waspadai.";
+			$('#A10').hide();
+			$('#B10').hide();
+			$('#D10').hide();
+		};
+
+        if (value10 == 'D') {
+            document.getElementById('hasil_r10').innerHTML = " Dia adalah orang yang bisa membuat kamu menyukai dan membencinya. Dia berhasil memberikan rasa manis ataupun pahit dalam hidup kamu.";
+			$('#A10').hide();
+			$('#B10').hide();
+			$('#C10').hide();
+		};
+    });
+
+    $("#r10_button").click(function() {
+
+        var r10_box = document.getElementById('r10_box');
+        r10_box.style.display = (r10_box.style.display != 'none') ? 'visible' : '';
+    });
+
+});
+</script>
+
+
+
+
+
+<style>
+.button {
+  float:right;
+  padding: 1em 3em;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-appearance: none;
+  border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  background:#EC5844;
+  border:none;
+  outline:none;
+  box-shadow: inset 0px -2px 11px #AB0F0F;
+  -webkit-box-shadow: inset 0px -2px 11px #AB0F0F;
+  -o-box-shadow: inset 0px -2px 11px #AB0F0F;
+  -moz-box-shadow: inset 0px -2px 11px #AB0F0F;
+  }
+
+  .button:hover{
+	opacity: 0.8;
+}
+</style>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" charset="utf-8">
+	// Wait for Cordova to load
+	//
+	document.addEventListener("deviceready", onDeviceReady, false);
+
+	// Cordova is ready
+	//
+	function onDeviceReady() {
+
+	}
+
+	// Audio player
+	//
+	var my_media = null;
+	var mediaTimer = null;
+
+
+	// Play audio
+	//
+	function playAudio(src) {
+		// Create Media object from src
+		my_media = new Media(src, onSuccess, onError);
+
+		// Play audio
+		my_media.play();
+
+		// Update my_media position every second
+		if (mediaTimer == null) {
+			mediaTimer = setInterval(function() {
+				// get my_media position
+				my_media.getCurrentPosition(
+					// success callback
+					function(position) {
+						if (position > -1) {
+							setAudioPosition((position) + " sec");
+						}
+					},
+					// error callback
+					function(e) {
+						console.log("Error getting pos=" + e);
+						setAudioPosition("Error: " + e);
+					}
+				);
+			}, 1000);
+		}
+	}
+
+	// Pause audio
+	//
+	function pauseAudio() {
+		if (my_media) {
+			my_media.pause();
+		}
+	}
+
+	// Stop audio
+	//
+	function stopAudio() {
+		console.log("stop");
+		if (my_media) {
+			my_media.stop();
+		}
+		clearInterval(mediaTimer);
+		mediaTimer = null;
+	}
+
+	// onSuccess Callback
+	//
+	function onSuccess() {
+		console.log("playAudio():Audio Success");
+	}
+
+	// onError Callback
+	//
+	function onError(error) {
+		alert('code: ' + error.code + '\n' +
+			'message: ' + error.message + '\n');
+	}
+
+	// Set audio position
+	//
+	function setAudioPosition(position) {
+		document.getElementById('audio_position').innerHTML = position;
+	}
+</script>
+
+
+</head>
+
+<body onload="playAudio('/android_asset/www/audio/music.mp3');">
+	<div class="header box css3-shadow" id="head"">
+ 	<div class="container">
+	  <div class="header-top">
+	        <div class="logo wow bounceInLeft" data-wow-delay="0.4s">
+				<a href="index.html"><img width="100" src="images/logo.png" alt=""/></a><br>
+			 </div>
+
+			<div class="clearfix"> </div>
+
+		  </div><!-- end header_main4 -->
+	</div>
+</div>
+
+	<!--start-services-->
+
+	<div id="about" class="service-section">
+
+
+
+
+
+    <div class="container">
+        <section>
+            <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+				<h3 style="font-weight: 300;padding: 0 0 0.5em"> Bagaimana Kepribadianmu ? </h3>
+				<br>
+                <p style="font-size:15px">1. Pada suatu hari, ada seekor burung berwarna hitam yang hinggap di jendela rumah kamu. Karena kamu tertarik dengan burung tersebut, kamu sangat ingin memeliharanya. Namun, di hari kelima ternyata burung tersebut berubah warna menjadi kuning. Selanjutnya, di hari keenam burung tersebut berubah menjadi hitam. Pertanyaannya, di hari kedelapan warna burng tersebut akan berubah menjadi apa?</p>
+                <ul>
+                    <li>
+                        <input name="r1" type="radio" value="A" id="A1">
+                        <label>Tetap hitam.</label>
+                    </li>
+                    <li>
+                        <input name="r1" type="radio" value="B" id="B1">
+                        <label>Berubah menjadi biru.</label>
+                    </li>
+                    <li>
+                        <input name="r1" type="radio" value="C" id="C1">
+                        <label>Berubah menjadi putih.</label>
+                    </li>
+                    <li>
+                        <input name="r1" type="radio" value="D" id="D1">
+                        <label>Berubah menjadi emas.</label>
+                    </li>
+                </ul>
+                <input class="button" type="button" id="r1_button" value="Hasil" />
+
+            </form>
+
+
+        </section>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+    </div>
+
+    <div style="display:none" id="r1_box" class="comments-main wow fadeInLeft animated" data-wow-delay="0.4s">
+
+        <div class="col-md-9">
+            <b>Setiap manusia pasti memiliki kepribadian yang berbeda-beda antara satu dengan yang lain. Sudah sewajarnyalah bila kita selalu ingin tahu bagaimana kepribadian kita agar bisa mengambil langkah bijak untuk menentukan masa depan</b>
+            <br/>
+            <br/>
+            <p id="hasil_r1">Belum ada hasil</p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <section>
+            <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+
+                <br>
+                <p style="font-size:15px"0>2. Ketika kamu sedang berjalan-berjalan sambil mendengarkan lagu di handphone kamu melalui headset, tiba-tiba saja kamu memerhatikan isi tong yang tumpah dijalanan. Ternyata, isi tong yang tumpah tersebut adalah ?</p>
+                <ul>
+                    <li>
+                        <input name="r2" type="radio" value="A" id="A2">
+                        <label>Wah, ternyata tong sampah itu kosong.</label>
+                    </li>
+                    <li>
+                        <input name="r2" type="radio" value="B" id="B2">
+                        <label>Tumpukan sampah tumpah dijalan </label>
+                    </li>
+                    <li>
+                        <input name="r2" type="radio" value="C" id="C2">
+                        <label>Biji apel, tulang , ikan,tulang ayam dan masih banyak lagi.</label>
+                    </li>
+                    <li>
+                        <input name="r2" type="radio" value="D" id="D2">
+                        <label>Seikat plastik sampah yang rapi.</label>
+                    </li>
+                </ul>
+                <input class="button" type="button" id="r2_button" value="Hasil" />
+            </form>
+
+
+        </section>
+
+
+    </div>
+
+    <div style="display:none" id="r2_box" class="comments-main wow fadeInLeft animated" data-wow-delay="0.4s">
+
+        <div class="col-md-9">
+            <b>Setiap manusia pasti memiliki kepribadian yang berbeda-beda antara satu dengan yang lain. Sudah sewajarnyalah bila kita selalu ingin tahu bagaimana kepribadian kita agar bisa mengambil langkah bijak untuk menentukan masa depan.</b>
+            <br/>
+            <br/>
+            <p id="hasil_r2">Belum ada hasil</p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+	<!--batas 1-->
+
+	<br>
+
+    <div class="container">
+        <section>
+            <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+
+                <br>
+                <p style="font-size:15px"0>3.Coba bayangkan, anngap saja kamu sedang berada disebuah tempat yang sangat sejuk dan tenang. Menurut  k amu, tempat tersebut adalah?</p>
+                <ul>
+                    <li>
+                        <input name="r3" type="radio" value="A" id="A3">
+                        <label>Sebuah dataran yang dipenuhi enagan salju berwarna putih.</label>
+                    </li>
+                    <li>
+                        <input name="r3" type="radio" value="B" id="B3">
+                        <label>Sebuah pantai yang biru dan indah. </label>
+                    </li>
+                    <li>
+                        <input name="r3" type="radio" value="C" id="C3">
+                        <label>Sebuah pegungan yangnhijau dan menyejukkan.</label>
+                    </li>
+                    <li>
+                        <input name="r3" type="radio" value="D" id="D3">
+                        <label>Sebuah padang yang dipenuhi bunga-bunga berwarna kuning.</label>
+                    </li>
+                </ul>
+                <input class="button" type="button" id="r3_button" value="Hasil" />
+            </form>
+
+
+        </section>
+
+
+    </div>
+
+    <div style="display:none" id="r3_box" class="comments-main wow fadeInLeft animated" data-wow-delay="0.4s">
+
+        <div class="col-md-9">
+            <b>Setiap manusia pasti memiliki kepribadian yang berbeda-beda antara satu dengan yang lain. Sudah sewajarnyalah bila kita selalu ingin tahu bagaimana kepribadian kita agar bisa mengambil langkah bijak untuk menentukan masa depan.</b>
+            <br/>
+            <br/>
+            <p id="hasil_r3">Belum ada hasil</p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+	<!--batas 1-->
+
+
+
+
+
+	<br>
+
+	 <div class="container">
+        <section>
+            <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+
+                <br>
+                <p style="font-size:15px">4. Pada suatu hari,kamu berada di sebuah tempat yang sangat asing bagi kamu. Kemudian, kamu melihat sebuah rumah yang pintunya sedikit terbuka. Apakah yang kamu pikirkan saat itu?</p>
+                <ul>
+                    <li>
+                        <input name="r4" type="radio" value="A" id="A4">
+                        <label>wah, jangan-jangam rumah itu baru saja kerampokan </label>
+                    </li>
+                    <li>
+                        <input name="r4" type="radio" value="B" id="B4">
+                        <label>Pemilik rumahnya pasti lupa menutup pintu.</label>
+                    </li>
+                    <li>
+                        <input name="r4" type="radio" value="C" id="C4">
+                        <label>aku yakin, pemiliknya  pasti sedang di rumah. Dia paling sedang menyapu  di runag tamu.</label>
+                    </li>
+                </ul>
+                <input class="button" type="button" id="r4_button" value="Hasil" />
+            </form>
+
+
+        </section>
+
+
+
+
+
+    </div>
+
+    <div style="display:none" id="r4_box" class="comments-main wow fadeInLeft animated" data-wow-delay="0.4s">
+
+        <div class="col-md-9">
+            <b>Setiap manusia pasti memiliki kepribadian yang berbeda-beda antara satu dengan yang lain. Sudah sewajarnyalah bila kita selalu ingin tahu bagaimana kepribadian kita agar bisa mengambil langkah bijak untuk menentukan masa depan.</b>
+            <br/>
+            <br/>
+            <p id="hasil_r4">Belum ada hasil</p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+	<br>
+	<div class="container">
+        <section>
+            <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+
+                <br>
+                <p style="font-size:15px">5. Kamu diminta untuk mewarnai sebuah cangkir putih yang masih polos. Kira-kira,corak apa yang kamu pilih ?</p>
+                <ul>
+                    <li>
+                        <input name="r5" type="radio" value="A" id="A5">
+                        <label>Berupa garis-garis vertikal ataupun horizontal </label>
+                    </li>
+                    <li>
+                        <input name="r5" type="radio" value="B" id="B5">
+                        <label>Bulat-bulat </label>
+                    </li>
+                    <li>
+                        <input name="r5" type="radio" value="C" id="C5">
+                        <label>Garis-garis yang menyerupai gelombang atau ombak.</label>
+                    </li>
+                    <li>
+                        <input name="r5" type="radio" value="D" id="D5">
+                        <label>Kotak-kotak seperti papan catur.</label>
+                    </li>
+                </ul>
+                <input class="button" type="button" id="r5_button" value="Hasil" />
+            </form>
+
+
+        </section>
+
+
+    </div>
+
+    <div style="display:none" id="r5_box" class="comments-main wow fadeInLeft animated" data-wow-delay="0.4s">
+
+        <div class="col-md-9">
+            <b>Setiap manusia pasti memiliki kepribadian yang berbeda-beda antara satu dengan yang lain. Sudah sewajarnyalah bila kita selalu ingin tahu bagaimana kepribadian kita agar bisa mengambil langkah bijak untuk menentukan masa depan.</b>
+            <br/>
+            <br/>
+            <p id="hasil_r5">Belum ada hasil</p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+	<br>
+	<div class="container">
+        <section>
+            <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+
+                <br>
+                <p style="font-size:15px">6. Jika kamu sedang membayangkan berada di angkasa dengan menggunakan parasut, kira-kira pemandangan seperti apa yang bisa kamu lihat pada saat itu ?</p>
+                <ul>
+                    <li>
+                        <input name="r6" type="radio" value="A" id="A6">
+                        <label>Sebuah lahan hijau yang dipenuhi dengan bunga-bunga cantik.</label>
+                    </li>
+                    <li>
+                        <input name="r6" type="radio" value="B" id="B6">
+                        <label>Susunan batu yang tertata rapi.</label>
+                    </li>
+                    <li>
+                       <input name="r6" type="radio" value="C" id="C6">
+                        <label>Garis-garis yang menyerupai gelombang atau ombak.</label>
+                    </li>
+                    <li>
+                        <input name="r6" type="radio" value="D" id="D6">
+                        <label>Kotak-kotak seperti papan catur.</label>
+                    </li>
+                </ul>
+                <input class="button" type="button" id="r6_button" value="Hasil" />
+
+            </form>
+
+
+        </section>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+    </div>
+
+    <div style="display:none" id="r6_box" class="comments-main wow fadeInLeft animated" data-wow-delay="0.4s">
+
+        <div class="col-md-9">
+            <b>Setiap manusia pasti memiliki kepribadian yang berbeda-beda antara satu dengan yang lain. Sudah sewajarnyalah bila kita selalu ingin tahu bagaimana kepribadian kita agar bisa mengambil langkah bijak untuk menentukan masa depan. </b>
+            <br/>
+            <br/>
+            <p id="hasil_r6">Belum ada hasil</p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+		<div class="container">
+        <section>
+            <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+
+                <br>
+                <p style="font-size:15px">7. Ketika kamu sedang tersesat di hutan dan dalam keadaan yang sangat kelaparan, kemudian kamu melihat sebuah istana permen , apa yang kamu lakukan ?</p>
+                <ul>
+                    <li>
+                        <input name="r7" type="radio" value="A" id="A7">
+                        <label>Siap memakan permen tersebut </label>
+                    </li>
+                    <li>
+                        <input name="r7" type="radio" value="B" id="B7">
+                        <label>Ingin mencicipi semua permen yang ada</label>
+                    </li>
+                    <li>
+                        <input name="r7" type="radio" value="C" id="C7">
+                        <label>caripermen kesukaan, jika sudah menemukan permen terdebut, segera memakannnya.</label>
+                    </li>
+					<li>
+                        <input name="r7" type="radio" value="D" id="D7">
+                        <label>Acuh, Karena kamu bukanlah pecinta permen.</label>
+                    </li>
+			   </ul>
+                <input class="button" type="button" id="r7_button" value="Hasil" />
+
+            </form>
+
+
+        </section>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+    </div>
+
+    <div style="display:none" id="r7_box" class="comments-main wow fadeInLeft animated" data-wow-delay="0.4s">
+
+        <div class="col-md-9">
+            <b>Setiap manusia pasti memiliki kepribadian yang berbeda-beda antara satu dengan yang lain. Sudah sewajarnyalah bila kita selalu ingin tahu bagaimana kepribadian kita agar bisa mengambil langkah bijak untuk menentukan masa depan. </b>
+            <br/>
+            <br/>
+            <p id="hasil_r7">Belum ada hasil</p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+
+	<div class="container">
+        <section>
+            <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+
+                <br>
+                <p style="font-size:15px">8. Jika kamu bermimajinasi sebagai musisi, alt music apa yang ingin kamu mainkan?</p>
+                <ul>
+                    <li>
+                        <input name="r8" type="radio" value="A" id="A8">
+                        <label>  biola</label>
+                    </li>
+                    <li>
+                        <input name="r8" type="radio" value="B" id="B8">
+                        <label> bas</label>
+                    </li>
+                    <li>
+                        <input name="r8" type="radio" value="C" id="C8">
+                        <label>Terompet </label>
+                    </li>
+					<li>
+                        <input name="r8" type="radio" value="D" id="D8">
+                        <label>Seruling </label>
+                    </li>
+                </ul>
+                <input class="button" type="button" id="r8_button" value="Hasil" />
+
+            </form>
+
+
+        </section>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+    </div>
+
+    <div style="display:none" id="r8_box" class="comments-main wow fadeInLeft animated" data-wow-delay="0.4s">
+
+        <div class="col-md-9">
+            <b>Setiap manusia pasti memiliki kepribadian yang berbeda-beda antara satu dengan yang lain. Sudah sewajarnyalah bila kita selalu ingin tahu bagaimana kepribadian kita agar bisa mengambil langkah bijak untuk menentukan masa depan. </b>
+            <br/>
+            <br/>
+            <p id="hasil_r8">Belum ada hasil</p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+	<div class="container">
+        <section>
+            <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+
+                <br>
+                <p style="font-size:15px">9. Mari bayangkan ada sebuah pohon yang sangat tua sekali. Bila hujan dating, beberapa daunnnya akan tumbuh. Namun, ketika musim gugur, satu demi satu daunnya jatuh berguguran. Jika kamu diminta untuk memilih, kamu ingin menjadi apa?</p>
+                <ul>
+                    <li>
+                        <input name="r9" type="radio" value="A" id="A9">
+                        <label> Hujan</label>
+                    </li>
+                    <li>
+                        <input name="r9" type="radio" value="B" id="B9">
+                        <label>Angin</label>
+                    </li>
+                    <li>
+                        <input name="r9" type="radio" value="C" id="C9">
+                        <label>Musim gugur</label>
+                    </li>
+					<li>
+                        <input name="r9" type="radio" value="D" id="D9">
+                        <label> Daun</label>
+                    </li>
+                </ul>
+                <input class="button" type="button" id="r9_button" value="Hasil" />
+
+            </form>
+
+
+        </section>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+    </div>
+
+    <div style="display:none" id="r9_box" class="comments-main wow fadeInLeft animated" data-wow-delay="0.4s">
+
+        <div class="col-md-9">
+            <b>Setiap manusia pasti memiliki kepribadian yang berbeda-beda antara satu dengan yang lain. Sudah sewajarnyalah bila kita selalu ingin tahu bagaimana kepribadian kita agar bisa mengambil langkah bijak untuk menentukan masa depan. </b>
+            <br/>
+            <br/>
+            <p id="hasil_r9">Belum ada hasil</p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+	<div class="container">
+        <section>
+            <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+
+                <br>
+                <p style="font-size:15px">10. Apabila di depan kamu ada empat jenis kue, kamu akan lebih memilih untuk menikmati ?</p>
+
+			   <ul>
+                    <li>
+                        <input name="r10" type="radio" value="A" id="A10">
+                        <label> Short cake </label>
+                    </li>
+                    <li>
+                        <input name="r10" type="radio" value="B" id="B10">
+                        <label> Cheese cake </label>
+                    </li>
+                    <li>
+                        <input name="r10" type="radio" value="C" id="C10">
+                        <label> Fruit tart </label>
+                    </li>
+					<li>
+                        <input name="r10" type="radio" value="D" id="D10">
+                        <label> Chocolate cake </label>
+                    </li>
+                </ul>
+                <input class="button" type="button" id="r10_button" value="Hasil" />
+
+            </form>
+
+
+        </section>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+    </div>
+
+    <div style="display:none" id="r10_box" class="comments-main wow fadeInLeft animated" data-wow-delay="0.4s">
+
+        <div class="col-md-9">
+            <b>Setiap manusia pasti memiliki kepribadian yang berbeda-beda antara satu dengan yang lain. Sudah sewajarnyalah bila kita selalu ingin tahu bagaimana kepribadian kita agar bisa mengambil langkah bijak untuk menentukan masa depan. </b>
+            <br/>
+            <br/>
+            <p id="hasil_r10">Belum ada hasil</p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+		<!--//end-services-->
+
+
+
+
+			<div class="container">
+        <section>
+            <form class="ac-custom ac-radio ac-fill" autocomplete="off">
+
+                <br>
+
+
+		  </form>
+
+
+        </section>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+    </div>
+
+
+
+
+
+			<!--start-smoth-scrolling-->
+			<script type="text/javascript" src="js/move-top.js"></script>
+			<script type="text/javascript" src="js/easing.js"></script>
+			<script type="text/javascript">
+								jQuery(document).ready(function($) {
+									$(".scroll").click(function(event){
+										event.preventDefault();
+										$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+									});
+								});
+								</script>
+							<!--start-smoth-scrolling-->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear'
+								 		};
+										*/
+
+										$().UItoTop({ easingType: 'easeOutQuart' });
+
+									});
+								</script>
+		<a href="#head" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+
+		<script src="js/svgcheckbx.js"></script>
+</body>
+</html>
